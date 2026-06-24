@@ -1,3 +1,5 @@
+cd ~/Documents/GitHub/blog
+cat > .github/workflows/deploy.yml <<'YAML'
 name: Deploy Blog to GitHub Pages
 on:
   push:
@@ -15,7 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: withastro/action@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - uses: withastro/action@v3
         with:
           node-version: 22
@@ -28,3 +32,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+YAML
