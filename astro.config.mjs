@@ -10,7 +10,6 @@ import markdoc from '@astrojs/markdoc';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com',
      site: 'https://jeffw5.github.io',
      base: '/blog',
     integrations: [mdx(), sitemap(), react(), markdoc()],
