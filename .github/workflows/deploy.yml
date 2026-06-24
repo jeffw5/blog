@@ -1,17 +1,22 @@
 cd ~/Documents/GitHub/blog
+rm -f .github/workflows/deploy.yml
 cat > .github/workflows/deploy.yml <<'YAML'
 name: Deploy Blog to GitHub Pages
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,6 +28,7 @@ jobs:
       - uses: withastro/action@v3
         with:
           node-version: 22
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
