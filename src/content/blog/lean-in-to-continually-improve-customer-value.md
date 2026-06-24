@@ -2,7 +2,7 @@
 title: LEAN IN To Continually Improve Customer Value
 description: Improving Customer Value
 pubDate: 2026-06-24T14:40
-updatedDate: ''
+updatedDate: 2026-06-24T14:53
 heroImage: /blog/images/pasted-image-1782330075027.png
 ---
 
