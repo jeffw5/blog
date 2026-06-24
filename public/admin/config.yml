@@ -6,7 +6,7 @@ backend:
 
   branch: main
 
-  base_url: https://YOUR-WORKER.workers.dev   # the Cloudflare Worker from Step 5
+  base_url: https://sveltia-cms-auth.jeffrey-wallk.workers.dev   # the Cloudflare Worker from Step 5
 
 # Where uploaded images are committed, and the URL they resolve to on the live site.
 
