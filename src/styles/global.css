@@ -16,6 +16,11 @@
 	--text-accent: #38bdf8;
 	--accent-glow: rgba(56, 189, 248, 0.15);
 
+	/* Blueprint page canvas + grid overlay (ported from services.html) */
+	--blueprint: #0d1b2a;
+	--grid-major: rgba(74, 144, 184, 0.05);
+	--grid-minor: rgba(74, 144, 184, 0.025);
+
 	/* Template-compat aliases (the blog template references these) */
 	--accent: #38bdf8;
 	--accent-dark: #0ea5e9;
@@ -38,7 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--bg-dark-core);
+	background: var(--blueprint);
 	color: var(--text-primary);
 	font-size: 20px;
 	line-height: 1.7;
@@ -137,4 +142,31 @@ hr {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	white-space: nowrap;
+}
+
+/* ============================================================
+   Blueprint background parity with services.html
+   Navy canvas + fixed blueprint grid, matching the main site,
+   demos, and the Services page. The !important on the body
+   background defeats the Astro starter template's top gradient
+   band regardless of stylesheet load order. The grid lives on
+   ::before (z-index:-1) so it sits behind page content and shows
+   through transparent containers like <main>.
+   ============================================================ */
+html body {
+	background: var(--blueprint) !important;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background-image:
+		linear-gradient(var(--grid-major) 1px, transparent 1px),
+		linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+		linear-gradient(var(--grid-minor) 1px, transparent 1px),
+		linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	pointer-events: none;
+	z-index: -1;
 }
