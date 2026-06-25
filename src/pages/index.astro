@@ -48,13 +48,13 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
     {posts.map(post => (
       <li class="post">
         <div class="thumb">
-          {post.data.cover
-            ? <img src={post.data.cover} alt="" loading="lazy" />
+          {post.data.heroImage
+		  ? <img src={post.data.heroImage} alt="" loading="lazy" />
             : <span class="thumb-ph" aria-hidden="true">▦</span>}
         </div>
         <div class="post-body">
           <div class="post-meta">
-            <span class="cat">{post.data.category ?? 'Post'}</span>
+            <span class="cat">{post.data.tags[0] ?? 'Post'}</span>
             <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
           </div>
           <a class="post-title" href={`${base}blog/${post.id}/`}>{post.data.title}</a>
@@ -74,7 +74,7 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
             <li class="compact-row">
               <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
               <a class="post-title" href={`${base}blog/${post.id}/`}>{post.data.title}</a>
-              <span class="cat">{post.data.category ?? 'Post'}</span>
+              <span class="cat">{post.data.tags[0] ?? 'Post'}</span>
             </li>
           ))}
         </ul>
