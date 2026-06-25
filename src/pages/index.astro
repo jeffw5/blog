@@ -1,49 +1,168 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
----
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+const posts = (await getCollection('blog'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const base = import.meta.env.BASE_URL;
+const fmt = (d) => d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+
+// group by year
+const byYear = {};
+for (const p of posts) {
+  const y = p.data.pubDate.getFullYear();
+  (byYear[y] ??= []).push(p);
+}
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+
+// group by tag (a post with multiple tags appears under each)
+const byTag = {};
+for (const p of posts) {
+  const tags = p.data.tags ?? [];
+  if (tags.length === 0) { (byTag['Untagged'] ??= []).push(p); continue; }
+  for (const t of tags) (byTag[t] ??= []).push(p);
+}
+const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
+---
+<BaseLayout title="Blog">
+  <div class="view-toolbar">
+    <span>Latest posts</span>
+    <div class="view-switch" role="group" aria-label="Choose post view">
+      <button data-view="list" aria-label="List view">List</button>
+      <button data-view="tile" aria-label="Tile view">Tile</button>
+      <button data-view="grouped" aria-label="Grouped view">Grouped</button>
+    </div>
+  </div>
+
+  <!-- sub-toggle, only shown in grouped view -->
+  <div id="group-sub" class="group-sub" role="group" aria-label="Group posts by" hidden>
+    <span class="sub-label">Group by</span>
+    <button data-groupby="year">Year</button>
+    <button data-groupby="tag">Tag</button>
+  </div>
+
+  <!-- flat: list + tile -->
+  <ul id="post-flat" class="posts view-list">
+    {posts.map(post => (
+      <li class="post">
+        <div class="thumb">
+          {post.data.cover
+            ? <img src={post.data.cover} alt="" loading="lazy" />
+            : <span class="thumb-ph" aria-hidden="true">▦</span>}
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="cat">{post.data.category ?? 'Post'}</span>
+            <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
+          </div>
+          <a class="post-title" href={`${base}blog/${post.id}/`}>{post.data.title}</a>
+          <p class="post-excerpt">{post.data.description}</p>
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  <!-- grouped by year -->
+  <div id="post-year" hidden>
+    {years.map(y => (
+      <section class="group-section">
+        <h2 class="group-head">{y}</h2>
+        <ul class="posts">
+          {byYear[y].map(post => (
+            <li class="compact-row">
+              <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
+              <a class="post-title" href={`${base}blog/${post.id}/`}>{post.data.title}</a>
+              <span class="cat">{post.data.category ?? 'Post'}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+
+  <!-- grouped by tag -->
+  <div id="post-tag" hidden>
+    {tagNames.map(tag => (
+      <section class="group-section">
+        <h2 class="group-head">{tag}</h2>
+        <ul class="posts">
+          {byTag[tag].map(post => (
+            <li class="compact-row">
+              <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
+              <a class="post-title" href={`${base}blog/${post.id}/`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .view-toolbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+  .view-switch button[aria-pressed="true"],
+  .group-sub button[aria-pressed="true"] { font-weight:500; text-decoration:underline; }
+  .group-sub { display:flex; align-items:center; gap:.5rem; margin-bottom:1.25rem; font-size:.9rem; }
+  .group-sub .sub-label { opacity:.6; }
+  .posts { list-style:none; margin:0; padding:0; }
+  .post-title { font-weight:500; display:block; text-decoration:none; }
+  .post-meta { display:flex; gap:.5rem; font-size:.85rem; opacity:.7; }
+  .thumb { display:none; }
+
+  /* List */
+  .view-list .post { padding:1rem 0; border-bottom:1px solid #e5e5e5; }
+
+  /* Tile */
+  .view-tile { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:1rem; }
+  .view-tile .post { border:1px solid #e5e5e5; border-radius:12px; overflow:hidden; }
+  .view-tile .thumb { display:block; height:120px; background:#f1efe8; }
+  .view-tile .thumb img { width:100%; height:100%; object-fit:cover; }
+  .view-tile .thumb-ph { display:flex; align-items:center; justify-content:center; height:100%; opacity:.4; font-size:1.6rem; }
+  .view-tile .post-body { padding:.85rem 1rem; }
+  .view-tile .post-excerpt { display:none; }
+
+  /* Grouped */
+  .group-section { margin-bottom:2rem; }
+  .group-head { font-size:1rem; opacity:.7; border-bottom:1px solid #e5e5e5; padding-bottom:.3rem; margin:0 0 .5rem; }
+  .compact-row { display:flex; align-items:baseline; gap:1rem; padding:.4rem 0; }
+  .compact-row time { font-size:.8rem; opacity:.6; min-width:6rem; }
+</style>
+
+<script>
+  const flat = document.getElementById('post-flat');
+  const yearBox = document.getElementById('post-year');
+  const tagBox = document.getElementById('post-tag');
+  const sub = document.getElementById('group-sub');
+  const viewButtons = document.querySelectorAll('.view-switch button');
+  const groupButtons = document.querySelectorAll('.group-sub button');
+
+  let view = localStorage.getItem('blogView') || 'list';
+  let groupBy = localStorage.getItem('blogGroupBy') || 'year';
+
+  function apply() {
+    const grouped = view === 'grouped';
+    sub.hidden = !grouped;
+    flat.hidden = grouped;
+    yearBox.hidden = !(grouped && groupBy === 'year');
+    tagBox.hidden = !(grouped && groupBy === 'tag');
+    if (!grouped) flat.className = 'posts view-' + (view === 'tile' ? 'tile' : 'list');
+
+    viewButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    groupButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.groupby === groupBy)));
+  }
+
+  viewButtons.forEach(b => b.addEventListener('click', () => {
+    view = b.dataset.view;
+    localStorage.setItem('blogView', view);
+    apply();
+  }));
+  groupButtons.forEach(b => b.addEventListener('click', () => {
+    groupBy = b.dataset.groupby;
+    localStorage.setItem('blogGroupBy', groupBy);
+    apply();
+  }));
+
+  apply();
+</script>
