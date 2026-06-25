@@ -2,7 +2,7 @@
 title: Re-Architecting Companies
 description: Applying architecture to business models
 pubDate: 2022-03-21T23:53:00
-updatedDate: ''
+updatedDate: 2025-06-20
 heroImage: /blog/images/pasted-image-1782363315216.png
 ---
 
