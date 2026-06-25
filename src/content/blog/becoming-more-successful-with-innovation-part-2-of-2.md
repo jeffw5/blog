@@ -3,7 +3,7 @@ title: Becoming MORE successful with innovation (Part 2 of 2)
 description: Driving Innovation
 pubDate: 2022-06-09T12:43:00
 updatedDate: 2026-06-25T12:43:00
-heroImage: /blog/images/pasted-image-1782409472568.png
+heroImage: /blog/images/pasted-image-1782409877284.png
 ---
 
 Now that you have a sense of WHAT innovation is (see Part 1), you can begin developing a process for institutionalizing innovation in your own organization.
@@ -11,9 +11,6 @@ Now that you have a sense of WHAT innovation is (see Part 1), you can begin deve
 Idea submissions will likely only focus on a subset of context (scenarios and problems they are trying to address). A separate effort will need to be made (by business analysts presumably) to fill in missing context.
 
 Ideas typically don’t exist in a vacuum, but it’s important to first explore the concept behind an idea (informally or via a discipline like Lateral Thinking – see DeBono’s works). This is where divergence occurs (before the funnel) that goes far beyond the conventional process of brainstorming. Brainstorming provides a useful "dump" of ideas, which for some teams is very valuable when time constrained. If a bit more time (and discipline) is applied, you can develop a large repository of ideas, some of which may lead to breakthroughs for solving problems and/or creating new opportunity in the market.
-
-
-
 
 ![Ideation Process & Framework](https://static.wixstatic.com/media/fb2cc9_8a9ff912d7824770bdb66f19cc572f47~mv2.png/v1/fill/w_1480,h_832,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fb2cc9_8a9ff912d7824770bdb66f19cc572f47~mv2.png "Ideation Process & Framework")
 
@@ -40,7 +37,6 @@ A more elaborate process is outlined below since this is where project and portf
 ![Innovation Pipeline](https://static.wixstatic.com/media/fb2cc9_2f1aeda22f8845c0af19ef061e4fa744~mv2.png/v1/fill/w_1477,h_1052,al_c,q_90,enc_avif,quality_auto/fb2cc9_2f1aeda22f8845c0af19ef061e4fa744~mv2.png "Innovation Pipeline")
 
 ©THE VALUE ENABLEMENT GROUP, LLC 2009-2019
-
 
 > **"Build it and they will come"**
 
