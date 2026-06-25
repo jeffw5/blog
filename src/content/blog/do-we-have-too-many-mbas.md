@@ -3,7 +3,7 @@ title: Do We Have Too Many MBAs?
 description: What Value do MBAs Provide?
 pubDate: 2020-12-17T20:32:00
 updatedDate: 2026-06-24T20:32:00
-heroImage: /blog/images/pasted-image-1782351170999.png
+heroImage: /blog/images/pasted-image-1782351285278.png
 ---
 
 The focus was placed on MBAs, but the problem is one of speed. Analysis and Planning (strategizing?) are key inputs for making decisions. Unfortunately, MBAs and education, in general, are mostly based on linear thinking. This works fine as long as the pace of change is fairly consistent (velocity and volatility are somewhat predictable, and uncertainty can be “managed”). But, we live in an exponential world due to all the digitalization\* so the window of time for performing analysis and planning is narrowing every day.
