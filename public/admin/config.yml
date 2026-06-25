@@ -39,3 +39,19 @@ collections:
       - { name: updatedDate, label: Updated Date, widget: datetime, required: false, format: "YYYY-MM-DDTHH:mm:ss" }
       - { name: heroImage, label: Hero Image, widget: image, required: false }
       - { name: body, label: Body, widget: markdown }
+      
+      
+ - name: tags
+    label: Tags
+    folder: src/data/tags
+    create: true
+    icon: sell
+    fields:
+      - { name: title, label: Tag Name }
+
+  - name: blog
+    label: Blog Posts
+    folder: src/content/blog
+    # ... your existing fields ...
+    fields:
+      - { label: "Tags", name: "tags", widget: "relation", collection: "tags", value_field: "title", display_fields: ["title"], search_fields: ["title"], multiple: true, required: false }
