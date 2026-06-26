@@ -25,6 +25,36 @@ for (const p of posts) {
   for (const t of tags) (byTag[t] ??= []).push(p);
 }
 const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
+
+// tag cloud data
+const slugify = (s) =>
+  s.toLowerCase().trim().replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '');
+
+const cloudCounts = {};
+for (const p of posts) {
+  for (const t of (p.data.tags ?? [])) cloudCounts[t] = (cloudCounts[t] ?? 0) + 1;
+}
+const cloudTagList = Object.keys(cloudCounts).sort((a, b) => a.localeCompare(b));
+const cCounts = cloudTagList.map(t => cloudCounts[t]);
+const cMin = Math.min(...cCounts, 1);
+const cMax = Math.max(...cCounts, 1);
+const cloudSize = (c) => {
+  if (cMax === cMin) return '1.15';
+  return (0.9 + ((c - cMin) / (cMax - cMin)) * 1.0).toFixed(2);
+};
+const cloudTags = cloudTagList.map(name => ({
+  name,
+  slug: slugify(name),
+  count: cloudCounts[name],
+  style: `font-size:${cloudSize(cloudCounts[name])}rem`,
+}));
+const cloudPosts = posts.map(post => ({
+  title: post.data.title,
+  href: `${base}blog/${post.id}/`,
+  date: post.data.pubDate,
+  tagSlugs: (post.data.tags ?? []).map(slugify).join(' '),
+  tags: (post.data.tags ?? []).map(name => ({ name, slug: slugify(name) })),
+}));
 ---
 <BaseLayout title="Blog">
   <div class="view-toolbar">
@@ -33,6 +63,7 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
       <button data-view="list" aria-label="List view">List</button>
       <button data-view="tile" aria-label="Tile view">Tile</button>
       <button data-view="grouped" aria-label="Grouped view">Grouped</button>
+      <button data-view="cloud" aria-label="Tag cloud view">Tag Cloud</button>
     </div>
   </div>
 
@@ -98,12 +129,47 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
       </section>
     ))}
   </div>
+
+  <!-- tag cloud -->
+  <div id="post-cloud" hidden>
+    <p class="tc-status" id="tc-status">Showing all {posts.length} posts</p>
+    <div class="tc-layout">
+      <aside class="tc-cloud" aria-label="Tag cloud">
+        <button class="tc-tag tc-all is-active" data-slug="__all__" data-name="All">
+          All <span class="tc-count">{posts.length}</span>
+        </button>
+        {cloudTags.map(tag => (
+          <button class="tc-tag" data-slug={tag.slug} data-name={tag.name} style={tag.style}>
+            {tag.name}<span class="tc-count">{tag.count}</span>
+          </button>
+        ))}
+      </aside>
+      <section class="tc-list" aria-label="Posts">
+        <ul>
+          {cloudPosts.map(p => (
+            <li class="tc-row" data-tags={p.tagSlugs}>
+              <a href={p.href}>
+                <span class="tc-title">{p.title}</span>
+                <span class="tc-date">{fmt(p.date)}</span>
+              </a>
+              <div class="tc-rowtags">
+                {p.tags.map(t => (
+                  <span class="tc-pill" data-slug={t.slug}>{t.name}</span>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="tc-empty" id="tc-empty" hidden>No posts with that tag.</p>
+      </section>
+    </div>
+  </div>
 </BaseLayout>
 
 <style>
   .view-toolbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
   .view-switch button[aria-pressed="true"],
-  .group-sub button[aria-pressed="true"] { font-weight:500; text-decoration:underline; }
+  .group-sub button[aria-pressed="true"] { font-weight:600; color:#facc15; }
   .group-sub { display:flex; align-items:center; gap:.5rem; margin-bottom:1.25rem; font-size:.9rem; }
   .group-sub .sub-label { opacity:.6; }
   .posts { list-style:none; margin:0; padding:0; }
@@ -128,12 +194,58 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
   .group-head { font-size:1rem; opacity:.7; border-bottom:1px solid #e5e5e5; padding-bottom:.3rem; margin:0 0 .5rem; }
   .compact-row { display:flex; align-items:baseline; gap:1rem; padding:.4rem 0; }
   .compact-row time { font-size:.8rem; opacity:.6; min-width:6rem; }
+
+  /* Tag cloud view */
+  #post-cloud .tc-status { margin:0 0 1.5rem; color:var(--text-secondary); font-size:.95rem; }
+  .tc-layout { display:grid; grid-template-columns:minmax(200px, 260px) 1fr; gap:2rem; align-items:start; }
+  .tc-cloud { display:flex; flex-wrap:wrap; gap:.55rem .6rem; align-content:flex-start; position:sticky; top:88px; }
+  .tc-tag {
+    cursor:pointer; line-height:1.2;
+    background:var(--bg-panel); color:var(--text-primary);
+    border:1px solid var(--border-subtle); border-radius:999px;
+    padding:.28em .75em;
+    transition:background .15s, border-color .15s, color .15s;
+  }
+  .tc-tag:hover { border-color:var(--text-accent); background:var(--bg-panel-elevated); }
+  .tc-tag.is-active {
+    background:var(--text-accent); border-color:var(--text-accent);
+    color:var(--bg-dark-core); font-weight:600;
+  }
+  .tc-count { margin-left:.45em; font-size:.7em; color:var(--text-secondary); }
+  .tc-tag.is-active .tc-count { color:var(--bg-dark-core); opacity:.7; }
+  .tc-all { font-weight:600; }
+
+  .tc-list ul { list-style:none; margin:0; padding:0; }
+  .tc-row { padding:.9rem 0; border-bottom:1px solid var(--border-subtle); }
+  .tc-row a {
+    display:flex; justify-content:space-between; align-items:baseline; gap:1rem;
+    text-decoration:none; color:var(--text-primary);
+  }
+  .tc-row a:hover .tc-title, .tc-row a:hover .tc-date { color:var(--text-accent); }
+  .tc-row .tc-title { font-weight:600; line-height:1.25; }
+  .tc-date { flex:none; font-size:.8rem; color:var(--text-secondary); white-space:nowrap; }
+  .tc-rowtags { display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.45rem; }
+  .tc-rowtags:empty { display:none; }
+  .tc-pill {
+    cursor:pointer; font-size:.72rem; padding:.12em .6em; border-radius:999px;
+    background:var(--bg-panel-elevated); border:1px solid var(--border-subtle);
+    color:var(--text-secondary); transition:all .15s;
+  }
+  .tc-pill:hover { color:var(--text-accent); border-color:var(--text-accent); }
+  .tc-pill.is-active { background:var(--text-accent); border-color:var(--text-accent); color:var(--bg-dark-core); }
+  .tc-empty { color:var(--text-secondary); padding:1rem 0; }
+
+  @media (max-width: 720px) {
+    .tc-layout { grid-template-columns:1fr; gap:1.5rem; }
+    .tc-cloud { position:static; }
+  }
 </style>
 
 <script>
   const flat = document.getElementById('post-flat');
   const yearBox = document.getElementById('post-year');
   const tagBox = document.getElementById('post-tag');
+  const cloudBox = document.getElementById('post-cloud');
   const sub = document.getElementById('group-sub');
   const viewButtons = document.querySelectorAll('.view-switch button');
   const groupButtons = document.querySelectorAll('.group-sub button');
@@ -143,11 +255,13 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
 
   function apply() {
     const grouped = view === 'grouped';
+    const cloud = view === 'cloud';
     sub.hidden = !grouped;
-    flat.hidden = grouped;
+    flat.hidden = grouped || cloud;
     yearBox.hidden = !(grouped && groupBy === 'year');
     tagBox.hidden = !(grouped && groupBy === 'tag');
-    if (!grouped) flat.className = 'posts view-' + (view === 'tile' ? 'tile' : 'list');
+    cloudBox.hidden = !cloud;
+    if (!grouped && !cloud) flat.className = 'posts view-' + (view === 'tile' ? 'tile' : 'list');
 
     viewButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
     groupButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.groupby === groupBy)));
@@ -163,6 +277,54 @@ const tagNames = Object.keys(byTag).sort((a, b) => a.localeCompare(b));
     localStorage.setItem('blogGroupBy', groupBy);
     apply();
   }));
+
+  // --- Tag cloud view: filter posts within the cloud ---
+  const cloudEl = cloudBox.querySelector('.tc-cloud');
+  const cloudRows = Array.from(cloudBox.querySelectorAll('.tc-row'));
+  const cloudStatus = cloudBox.querySelector('#tc-status');
+  const cloudEmptyEl = cloudBox.querySelector('#tc-empty');
+  const cloudTotal = cloudRows.length;
+
+  function applyCloudFilter(slug) {
+    let shown = 0;
+    cloudEl.querySelectorAll('.tc-tag').forEach(btn => {
+      btn.classList.toggle('is-active', btn.dataset.slug === slug);
+    });
+    cloudRows.forEach(row => {
+      const rowTags = row.dataset.tags ? row.dataset.tags.split(' ') : [];
+      const match = slug === '__all__' || rowTags.includes(slug);
+      row.hidden = !match;
+      if (match) shown += 1;
+      row.querySelectorAll('.tc-pill').forEach(pill => {
+        pill.classList.toggle('is-active', slug !== '__all__' && pill.dataset.slug === slug);
+      });
+    });
+    if (slug === '__all__') {
+      cloudStatus.textContent = 'Showing all ' + cloudTotal + ' posts';
+    } else {
+      const btn = cloudEl.querySelector('.tc-tag[data-slug="' + slug + '"]');
+      const name = btn ? btn.dataset.name : slug;
+      const noun = shown === 1 ? 'post' : 'posts';
+      cloudStatus.textContent = shown + ' ' + noun + ' tagged "' + name + '"';
+    }
+    cloudEmptyEl.hidden = shown !== 0;
+  }
+
+  if (cloudEl) {
+    cloudEl.addEventListener('click', e => {
+      const btn = e.target.closest('.tc-tag');
+      if (!btn) return;
+      const slug = btn.dataset.slug;
+      const clearing = btn.classList.contains('is-active') && slug !== '__all__';
+      applyCloudFilter(clearing ? '__all__' : slug);
+    });
+    cloudBox.querySelector('.tc-list').addEventListener('click', e => {
+      const pill = e.target.closest('.tc-pill');
+      if (!pill) return;
+      e.preventDefault();
+      applyCloudFilter(pill.dataset.slug);
+    });
+  }
 
   apply();
 </script>
