@@ -4,6 +4,8 @@ description: How To Architect Your Business
 pubDate: 2021-11-15T12:42:00
 updatedDate: 2026-06-25T12:39:00
 heroImage: /blog/images/pasted-image-1782409189592.png
+tags:
+  - Architecture
 ---
 
 The Prioritization Model is designed to provide a holistic understanding around change and (designed properly) provides clear and unbiased guidance for informing decisions for investing in change (guiding and optimizing portfolio-based investments = ALL investments). Given the complexity and scale of measures involved in building a holistic Prioritization Model, tools are a necessary aid. This is not something a BI (Business Intelligence) solution can easily pull off, given the complexity of relationships and data that needs to be culled from the Capability Heat Map.
