@@ -4,6 +4,8 @@ description: Let's start with Acceptance
 pubDate: 2021-01-08T19:25:00
 updatedDate: 2026-06-24T19:25:00
 heroImage: /blog/images/pasted-image-1782347114929.png
+tags:
+  - Diversity
 ---
 
 Everyone wants to be accepted and included. Acceptance is about what’s right, whereas Inclusion is about what’s earned. Being accepted for who you are is one of the basic human rights. The ability to be included in a group, organization, or community is about the value you can offer. When people discuss the topic of Diversity, they often conflate and confuse the issues of acceptance and inclusion.
