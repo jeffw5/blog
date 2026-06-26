@@ -4,6 +4,8 @@ description: What is Trust and how do we measure it?
 pubDate: 2020-10-14T20:51:00
 updatedDate: 2026-06-24T20:51:00
 heroImage: /blog/images/pasted-image-1782352374336.png
+tags:
+  - TRUST
 ---
 
 The issue with the "law" is that it has been diminished by semantic relativity bounded within a literal definition of an activity, behavior, and perceived impact within a bounded scenario. We call this case law, and those who are sufficiently clever can maneuver through the facts and present them within optimized relativity to maximize outcomes for a given purpose or person.
