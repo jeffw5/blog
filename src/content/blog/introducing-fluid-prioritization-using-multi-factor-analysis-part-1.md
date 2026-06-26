@@ -3,7 +3,7 @@ title: Introducing Fluid Prioritization using Multi-Factor Analysis (Part 1)
 description: Fluid Prioritization
 pubDate: 2022-04-12T23:06:00
 updatedDate: 2026-06-25T23:06:00
-heroImage: ''
+heroImage: /blog/images/pasted-image-1782446910624.png
 tags:
   - Prioritization
 ---
@@ -18,9 +18,7 @@ Every business has one or more levels of decision making where priorities are se
 
 Figure 1 – Core Components in the Biz:DNAⓒ
 
-
 The way to address these challenges with prioritization is to implement prioritization as a continuous cycle of decision making that can be introduced on top of the lifecycles used to implement change for products, systems, and services. The decision making to guide prioritization relies upon input from Demand Management and conducts real-time impact assessment on multiple variables and levels across the organization. The models and technologies used to design and implement fluid prioritization are patterned after FinTech, which has relied upon augmented decision management to prioritize and execute actions across the financial industry (notably in trading floors) for years. The concepts are similar, however, the models and implementation require a different approach.
-
 
 ![Figure 2 – Conceptual diagram of multi-level prioritization](https://static.wixstatic.com/media/fb2cc9_ebe3a53848b2480b9fc9bf7311e97a4f~mv2.png/v1/fill/w_938,h_526,al_c,lg_1,q_90,enc_avif,quality_auto/fb2cc9_ebe3a53848b2480b9fc9bf7311e97a4f~mv2.png "Figure 2 – Conceptual diagram of multi-level prioritization")
 
@@ -31,7 +29,6 @@ Fluid Prioritization incorporates a number of disciplines, which exist in every 
 **Demand harmonization across the organization.**
 
 Demand for change can be triggered by internal or external sources. Internal sources are from production issues within systems or processes, defects in projects, or simply requests for changes. External sources can be from regulatory agencies, customers, competitors, and changes to politics and economics (local, national, and international). Harmonizing this abbreviated list is only part of the challenge. The larger opportunity lies with the ability to model demand into a federated knowledge repository that can be properly mined and analyzed.
-
 
 **Impact assessment across the organization.**
 
