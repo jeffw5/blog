@@ -21,37 +21,24 @@ site_url: https://jeffw5.github.io/blog
 display_url: https://jeffw5.github.io/blog
 
 collections:
-
   - name: blog
-
     label: Blog Posts
-
     folder: src/content/blog     # must match the Astro content collection folder
-
     create: true
-
     slug: "{{slug}}"
-
     fields:
       - { name: title, label: Title, widget: string }
       - { name: description, label: Description, widget: text }
       - { name: pubDate, label: Publish Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
       - { name: updatedDate, label: Updated Date, widget: datetime, required: false, format: "YYYY-MM-DDTHH:mm:ss" }
       - { name: heroImage, label: Hero Image, widget: image, required: false }
+      - { name: tags, label: Tags, widget: relation, collection: tags, value_field: title, display_fields: [title], search_fields: [title], multiple: true, required: false }
       - { name: body, label: Body, widget: markdown }
-      
-      
- - name: tags
+
+  - name: tags
     label: Tags
     folder: src/data/tags
     create: true
     icon: sell
     fields:
       - { name: title, label: Tag Name }
-
-  - name: blog
-    label: Blog Posts
-    folder: src/content/blog
-    # ... your existing fields ...
-    fields:
-      - { label: "Tags", name: "tags", widget: "relation", collection: "tags", value_field: "title", display_fields: ["title"], search_fields: ["title"], multiple: true, required: false }
