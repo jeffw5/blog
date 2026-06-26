@@ -4,6 +4,9 @@ description: Applying architecture to business models
 pubDate: 2022-03-21T23:53:00
 updatedDate: 2025-06-20T23:53:00
 heroImage: /blog/images/pasted-image-1782363315216.png
+tags:
+  - Architecture
+  - Business Model
 ---
 
 It’s time to “fix” the broken leadership and structures in public companies. The recurring theme of promise from a few people at the top who are inserted as saviors, visionaries, and leaders are recruited and compensated with the sole trust to drive profitability for shareholders. The trust is to the shareholders above all else, so we should not be surprised by the outrageous compensation (50x — 250x of the lowest-paid employee)and parachutes are provided to these employees. When these leaders fail, and many do, the reasoning and explanations in annual reports and presentations are often very complex and carefully positioned.
