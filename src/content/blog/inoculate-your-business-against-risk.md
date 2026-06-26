@@ -4,6 +4,8 @@ description: Vaccinating your companyt from risk
 pubDate: 2021-05-07T21:50:00
 updatedDate: 2026-06-24T21:50:00
 heroImage: /blog/images/pasted-image-1782355852591.png
+tags:
+  - Risk & Exposure
 ---
 
 In the prior article, I introduced a 4-step process for Strategic Planning that any organization can implement. While planning establishes a set of activities for addressing needs and overcoming challenges, even the best plans can be disabled by unplanned events. When unplanned events occur, they require investigation and perhaps a response. These unplanned activities can drain resources and can derail revenue plans for one or more quarters. In some cases, these events can take down an entire company. Insurance can help, but there’s much more that businesses can do to insulate themselves from risk.
