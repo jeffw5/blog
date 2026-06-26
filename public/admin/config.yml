@@ -21,8 +21,8 @@ collections:
     fields:
       - { name: title, label: Title, widget: string }
       - { name: description, label: Description, widget: text }
-      - { name: pubDate, label: Publish Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
-      - { name: updatedDate, label: Updated Date, widget: datetime, required: false, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: pubDate, label: Publish Date, widget: datetime, format: string }
+      - { name: updatedDate, label: Updated Date, widget: datetime, required: false, format: string }
       - { name: heroImage, label: Hero Image, widget: image, required: false }
       - { name: tags, label: Tags, widget: list, required: false }
       - { name: body, label: Body, widget: markdown }
