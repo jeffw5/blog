@@ -6,6 +6,7 @@ updatedDate: 2026-06-26T14:54:00
 heroImage: /blog/images/pasted-image-1782503688839.png
 tags:
   - Digital Transformation
+  - Finance
 ---
 
 Here are a few thoughts on how the notions of mobile applications are changing. The initial launch of mobile applications was directed at the handheld devices and the human interface design was primarily focused on the visual interface (presentation layer). With the addition of new sensory technologies and faster processors, the UI has morphed into UX. Now designers are focused on creating an experience (sound, touch, visual 2D and 3D). Work is already underway to support smell (electronic olfaction on a chip). So, now it’s a question of how best to blend all of these interface options to support the right user experience.
