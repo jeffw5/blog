@@ -4,6 +4,8 @@ description: Innovative Leaders in Education
 pubDate: 2021-01-14T19:16:00
 updatedDate: 2026-06-24T19:17:00
 heroImage: /blog/images/pasted-image-1782346836097.png
+tags:
+  - Education
 ---
 
 Schools and teachers have had to be very creative to address the challenges of remote learning thrust upon them by COVID. While many view these as temporary measures, others are beginning to embrace the technologies and opportunities that come from these new constraints. 
