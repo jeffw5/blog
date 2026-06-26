@@ -4,7 +4,7 @@ description: |-
   AI is not the solution to every problem
   Let's not loose site of the role that technology plays
 pubDate: 2022-06-09T22:36:00
-updatedDate: ''
+updatedDate: 2026-06-25T22:40:00
 heroImage: /blog/images/pasted-image-1782444538926.png
 tags:
   - AI
@@ -25,7 +25,6 @@ Here is a progression of strategic planning to address the business challenges.
 3. Operational quality
 4. Lack of agility, adaptability, and resiliency to respond to change
 
-
 **Strategy:**
 
 - Goal 1 - Improve operational agility and adaptability to respond to change
@@ -33,7 +32,6 @@ Here is a progression of strategic planning to address the business challenges.
 - Goal 3 - Expand value of products & services to match and surpass market competition
 - Goal 4 - Improve measurement of customer value
 - Goal 5 - Restore profitability and position company as market leader
-
 
 **Align Strategy with Execution:**
 
@@ -46,7 +44,6 @@ Here is a progression of strategic planning to address the business challenges.
 7. Figure out which technologies (AI is but one) can be leveraged (right tool for the right job)
 8. Execute the changes to implement the solutions
 9. Measure, Adapt, and Deliver (projects, products, services)
-
 
 **Operations:**
 
