@@ -4,6 +4,8 @@ description: Technology should enable markets not drive them
 pubDate: 2019-06-14T23:45:00
 updatedDate: 2026-06-24T23:46:00
 heroImage: /blog/images/pasted-image-1782362774501.png
+tags:
+  - Customer Focus
 ---
 
 Here are 2 important questions we may want to ask as we plan the future:
