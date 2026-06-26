@@ -2,7 +2,7 @@
 title: Becoming MORE successful with innovation (Part 1 of 2)
 description: Driving Innovation
 pubDate: 2022-06-20T22:09:00
-updatedDate: ''
+updatedDate: 2026-06-25T22:47:00
 heroImage: /blog/images/pasted-image-1782409877284.png
 tags:
   - Innovation
@@ -10,11 +10,7 @@ tags:
 
 It might be helpful to provide a bit of context around one of the more commonly misused terms in organizations.
 
-
-
-
 Innovation can evolve and expand in many areas and may include any idea that can be developed to address one or more desired outcomes for a customer. Customers can be internal or external. Having said that, innovation is (typically) referred to as:
-
 
 > "**The process of creating and delivering new customer value in the marketplace"**
 
@@ -27,7 +23,6 @@ There is an implied lifecycle around innovation that we may want to incorporate 
 ©THE VALUE ENABLEMENT GROUP, LLC. 2009-2019
 
 The above diagram illustrates the progression for taking an idea from concept through innovation. Everyone goes through the first 2 stages as a natural extension of human curiosity. The next 3 stages are a bit more challenging.
-
 
 There is an implied lifecycle around innovation that we may want to incorporate into our portfolio planning:
 
@@ -46,7 +41,6 @@ Unfortunately, predicting product success based on behavioral analytics (project
 A better approach is to study what customers want and then measure the “value gaps” with precision so you know exactly how to assess the likelihood that a customer will buy a product or service.
 
 This way, companies can improve the decisions they make for designing, delivering, and communicating the value that a product or service provides to individual customers within a market.
-
 
 ## **_Hint: Customers buy products NOT markets._**
 
