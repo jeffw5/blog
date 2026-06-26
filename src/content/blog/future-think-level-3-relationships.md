@@ -4,6 +4,8 @@ description: Building Digital Relationships
 pubDate: 2021-03-08T20:56:00
 updatedDate: 2026-06-24T20:56:00
 heroImage: /blog/images/pasted-image-1782352594380.png
+tags:
+  - Customer Focus
 ---
 
 Today, people rely on face-to-face interactions for establishing and building relationships (Level 1). Because of COVID, many more are being thrust into primitive online environments that rely on screen sharing and media to build and maintain relationships (Level 2). A side benefit of COVID is the need to accelerate the development and convergence of available technologies to greatly improve online experiences (Level 3). There is a market, and there’s a whole new way of tapping into ad revenue and developing immersive experiences and relationships. Preserving those experiences and relationships will mean big bucks, which brings me to the article and a few future thoughts below.
