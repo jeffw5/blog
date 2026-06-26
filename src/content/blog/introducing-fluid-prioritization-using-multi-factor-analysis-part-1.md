@@ -1,0 +1,44 @@
+---
+title: Introducing Fluid Prioritization using Multi-Factor Analysis (Part 1)
+description: Fluid Prioritization
+pubDate: 2022-04-12T23:06:00
+updatedDate: 2026-06-25T23:06:00
+heroImage: ''
+tags:
+  - Prioritization
+---
+
+Companies recognize the need to become more agile so they can respond to the accelerating pace of change and increasing levels of complexity. Many companies have implemented an Agile methodology to speed up development lifecycles to reduce cycle time for delivering changes to systems and processes. But, almost every organization struggles with prioritizing change due to the overwhelming amount of information, juggling the number of projects and resources, and trying to manage complexity and uncertainty. Prioritization involves a complex array of decisions (what to do, when to do it, who should do what, when should it be done, and why are we doing it) where each decision impacts people, processes, resources, and stakeholders. Decision making is no longer scalable as there are only so many meetings key resources (decision-makers) can attend in order to keep pace with change. The number of decisions continues to grow as does the amount of information, so these challenges continue to outpace the ability of organizations to scale decision making only making prioritization more complex. A better approach is to introduce a more “fluid” capability for prioritizing change allowing companies to make decisions at scale to keep pace with accelerating change and complexity. The framework for fluid prioritization will be introduced in this article provides the foundation for enabling business agility.
+
+## WHAT is “Fluid” Prioritization?
+
+Every business has one or more levels of decision making where priorities are set in order to guide investments in change (initiatives). Prioritization is typically implemented as a discrete process at the front end of lifecycle management to balance supply (of resources and monies) and demand (issues, problems, ideas). This used to work reasonably well when the pace of change was more manageable and sufficient knowledge about complexity was readily available. Decisions about where and when to invest tend to have shorter lifetimes as priorities change with increasing frequency. Larger initiatives are increasingly more difficult to fund initially and the original assumptions and business conditions that made the investment favorable may change over time. Organizations have attempted to use Agile methodologies to break large technology initiatives into smaller (bite-size) chunks, which are easier to fund. This approach works for most technology initiatives but can be more challenging for products and services that are complex and subject to external policies (compliance, regulations, laws, standards, etc.).
+
+![Figure 1 – Core Components in the Biz:DNAⓒ](https://static.wixstatic.com/media/fb2cc9_829dbfb3f0a64903ae965265aa5e2fcf~mv2.png/v1/fill/w_1071,h_456,al_c,lg_1,q_90,enc_avif,quality_auto/fb2cc9_829dbfb3f0a64903ae965265aa5e2fcf~mv2.png "Figure 1 – Core Components in the Biz:DNAⓒ")
+
+Figure 1 – Core Components in the Biz:DNAⓒ
+
+
+The way to address these challenges with prioritization is to implement prioritization as a continuous cycle of decision making that can be introduced on top of the lifecycles used to implement change for products, systems, and services. The decision making to guide prioritization relies upon input from Demand Management and conducts real-time impact assessment on multiple variables and levels across the organization. The models and technologies used to design and implement fluid prioritization are patterned after FinTech, which has relied upon augmented decision management to prioritize and execute actions across the financial industry (notably in trading floors) for years. The concepts are similar, however, the models and implementation require a different approach.
+
+
+![Figure 2 – Conceptual diagram of multi-level prioritization](https://static.wixstatic.com/media/fb2cc9_ebe3a53848b2480b9fc9bf7311e97a4f~mv2.png/v1/fill/w_938,h_526,al_c,lg_1,q_90,enc_avif,quality_auto/fb2cc9_ebe3a53848b2480b9fc9bf7311e97a4f~mv2.png "Figure 2 – Conceptual diagram of multi-level prioritization")
+
+Figure 2 – Conceptual diagram of multi-level prioritization
+
+Fluid Prioritization incorporates a number of disciplines, which exist in every organization (perhaps at varying levels of maturity). They include Demand Management, Prioritization, Portfolio Management, Business Case / Investment Planning, Knowledge Management, Problem Management, and Decision Support. A properly designed fluid prioritization model integrates data and augments the decision making by delivering these core functions:
+
+**Demand harmonization across the organization.**
+
+Demand for change can be triggered by internal or external sources. Internal sources are from production issues within systems or processes, defects in projects, or simply requests for changes. External sources can be from regulatory agencies, customers, competitors, and changes to politics and economics (local, national, and international). Harmonizing this abbreviated list is only part of the challenge. The larger opportunity lies with the ability to model demand into a federated knowledge repository that can be properly mined and analyzed.
+
+
+**Impact assessment across the organization.**
+
+Once demand has been modeled and internally analyzed, it’s ready to be externally analyzed against the core components of the Biz:DNA©. Each demand item in the demand repository needs to be continually analyzed for its impact on strategy, execution, and operations. This is a stand-alone set of algorithms that are continually running to keep a “pulse” on risk and exposure as change is discovered (“sensed”). The combination of impact and attribution for demand items will feed into the first stage of prioritization, which also runs as a continuous set of algorithms. The algorithmic complexity will continue to evolve over time for the analysis, impact assessment, and prioritization and machine learning will be introduced once the data becomes reliable, and sources are stabilized.
+
+**Continual prioritization across strategy, execution, and operations.**
+
+The next level of prioritization involves actioning resources to take action on decision making. Most commonly, organizations think about prioritization that drives portfolios of projects. This is a large and complex component of level 2 prioritization and one that has been getting a lot of attention in the Agile communities involved in lifecycle delivery (typically involving systems change). A key challenge unique to lifecycle change is the additional demand associated with requirements (created for initiatives) and defects (created from initiatives). Both need to be fed back and rationalized against the 2-level prioritization model. This is where the “fluid” part becomes most apparent and can have the highest impact. Current practices with requirements management do not address the distillation and alignment of requirements using a model-driven approach. There are some very interesting white papers and research that have introduced modeling and reuse of requirements, but this is a rich topic for exploration in a future article. This next level of prioritization involves an analysis of decisions being made within each project (initiative), within goals and objectives driving strategy, and within the operations (across all functional areas including the supply chains). Each of these decisions needs to be viewed as a new type of change that can impact other ongoing changes and ongoing processes across the organization. This is where a recursive model leveraging the above-mentioned algorithms can be leveraged to help inform decision-makers about the impacts (intended and unintended) for a given decision. This reentrant model is a critical framework to support the accelerating scale (volume & complexity) of change. Over time, this model will evolve (as mentioned in the prior bullet) into an organic model that is infused into the organization and which will drive agility with both human and machine interaction.
+
+[Find out WHY this emergent capability for decision making is needed in Part 2 of this series.](https://jeffw5.github.io/blog/blog/introducing-fluid-prioritization-using-multi-factor-analysis-part-2/)
