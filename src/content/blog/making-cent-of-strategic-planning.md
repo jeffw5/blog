@@ -4,6 +4,8 @@ description: Driving Value through Strategic Planning
 pubDate: 2022-06-03T23:28:00
 updatedDate: 2026-06-24T23:29:00
 heroImage: /blog/images/pasted-image-1782362065665.png
+tags:
+  - Strategy
 ---
 
 Every company does planning, but maybe it’s not always efficient and consistent. Too many books and white papers have been written about strategy and planning, but the basic concepts have not changed. Strategic planning can be distilled into a simple 4-step process:
