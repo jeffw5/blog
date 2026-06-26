@@ -4,6 +4,8 @@ description: Knowledge Engineering is the foundation for designing, building, an
 pubDate: 2023-02-07T23:57:00
 updatedDate: 2026-06-24T23:57:00
 heroImage: /blog/images/pasted-image-1782363479401.png
+tags:
+  - Knowledge Engineering
 ---
 
 With all these RPA / Workflow / ML (still emergent) companies starting to merge their capabilities, we will begin to see self-assembling patterns of services. The notion of loosely coupled services that self-assemble into larger flows will require model-driven analytics (not the log-based reporting, which is after the fact, but companies are going to need the ability to anticipate what might happen. This is a bit scary since most compliance-based operations are all hard-wired ( = zero adaptability). This 1980’s model will no longer make sense, so companies are going to be forced to instantiate their policies into models (not simple rule sets that are impossible to navigate, let alone understand collectively). All of this suggests the need to create sub-assemblies of emergent processes within a given operational domain (suggesting the need for the domain models that I’ve socialized in the last few years), which can provide a measure of predictability and thus support patterns of aligned policy. Suddenly, all these BI and Big Data analytics no longer seem relevant. They are going to struggle to ingest multiple sets of patterns into their reporting analytics and algorithms. This may give rise to a new set of model-driven analytic tools. 
