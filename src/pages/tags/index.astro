@@ -1,119 +1,253 @@
 ---
-import { SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
-// Main site lives in a different repo at /Website. The logo and "Home" always
-// return there. Blog is the only internal section.
-const SITE = 'https://jeffw5.github.io/Website';
-const LOGO = 'https://jeffw5.github.io/Website/logo.png';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const slugify = (s) =>
+  s.toLowerCase().trim().replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '');
+
+// Count tag frequency across all non-draft posts
+const tagCounts = new Map();
+for (const p of posts) {
+  for (const t of p.data.tags ?? []) {
+    tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
+  }
+}
+
+const baseTags = [...tagCounts.entries()]
+  .map(([name, count]) => ({ name, count, slug: slugify(name) }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const counts = baseTags.map((t) => t.count);
+const minC = Math.min(...counts, 1);
+const maxC = Math.max(...counts, 1);
+
+const sizeFor = (c) => {
+  if (maxC === minC) return '1.15';
+  const t = (c - minC) / (maxC - minC);
+  return (0.9 + t * 1.0).toFixed(2);
+};
+
+// Everything the template needs, precomputed here so the markup stays plain.
+const cloudTags = baseTags.map((t) => ({
+  name: t.name,
+  count: t.count,
+  slug: t.slug,
+  style: `font-size:${sizeFor(t.count)}rem`,
+}));
+
+const listPosts = posts.map((post) => {
+  const tagList = post.data.tags ?? [];
+  return {
+    title: post.data.title,
+    href: `${base}blog/${post.id}/`,
+    pubDate: post.data.pubDate,
+    tagSlugs: tagList.map(slugify).join(' '),
+    tags: tagList.map((name) => ({ name, slug: slugify(name) })),
+  };
+});
+
+const totalPosts = posts.length;
 ---
-<header>
-	<nav>
-		<a class="brand" href={SITE} aria-label="Back to jeffw5.github.io/Website home">
-			<img src={LOGO} alt="The Value Enablement Group" class="brand-logo"
-				onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
-			<span class="brand-fallback">VEG</span>
-			<span class="brand-title">{SITE_TITLE}</span>
-		</a>
-		<div class="nav-links">
-			<a href={`${SITE}/index.html`}>Home</a>
-			<a href={`${SITE}/about.html`}>About</a>
-			<a href={`${SITE}/services.html`}>Services</a>
-			<a href="https://jeffw5.github.io/Value/index.html">Demos</a>
-			<HeaderLink href={import.meta.env.BASE_URL}>Blog</HeaderLink>
-			<a class="ask" href={`${SITE}/avatar.html`}>Ask Jeffrey ›</a>
-		</div>
-	</nav>
-</header>
+
+<BaseLayout title="Tags" description="Browse blog posts by tag">
+  <div class="tagcloud-page">
+    <header class="tc-head">
+      <h1>Browse by Tag</h1>
+      <p class="tc-status" id="tc-status">Showing all {totalPosts} posts</p>
+    </header>
+
+    <div class="tc-layout">
+      <aside class="tc-cloud" aria-label="Tag cloud">
+        <button class="tc-tag tc-all is-active" data-slug="__all__" data-name="All">
+          All <span class="tc-count">{totalPosts}</span>
+        </button>
+        {cloudTags.map((tag) => (
+          <button class="tc-tag" data-slug={tag.slug} data-name={tag.name} style={tag.style}>
+            {tag.name}<span class="tc-count">{tag.count}</span>
+          </button>
+        ))}
+      </aside>
+
+      <section class="tc-list" aria-label="Posts">
+        <ul>
+          {listPosts.map((p) => (
+            <li class="tc-row" data-tags={p.tagSlugs}>
+              <a href={p.href}>
+                <span class="tc-title">{p.title}</span>
+                <span class="tc-date"><FormattedDate date={p.pubDate} /></span>
+              </a>
+              <div class="tc-rowtags">
+                {p.tags.map((t) => (
+                  <span class="tc-pill" data-slug={t.slug}>{t.name}</span>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="tc-empty" id="tc-empty" hidden>No posts with that tag.</p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
 <style>
-	header {
-		margin: 0;
-		background: var(--bg-panel);
-		border-bottom: 1px solid var(--border-subtle);
-		position: sticky;
-		top: 0;
-		z-index: 100;
-	}
-	nav {
-		max-width: 1100px;
-		margin: 0 auto;
-		padding: 0 1.5em;
-		height: 72px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1.5rem;
-	}
-	/* Brand / logo — always returns to the main site */
-	.brand {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.7rem;
-		text-decoration: none;
-		flex-shrink: 0;
-	}
-	.brand-logo {
-		width: 38px;
-		height: 38px;
-		object-fit: contain;
-		border: 1px solid var(--border-subtle);
-		border-radius: 8px;
-		background: var(--bg-dark-core);
-	}
-	.brand-fallback {
-		display: none;
-		font-weight: 700;
-		color: var(--text-accent);
-		border: 1px solid var(--border-subtle);
-		border-radius: 8px;
-		padding: 0.35rem 0.5rem;
-	}
-	.brand-title {
-		font-size: 1rem;
-		font-weight: 600;
-		color: var(--text-primary);
-		letter-spacing: -0.02em;
-		white-space: nowrap;
-	}
-	/* Nav links */
-	.nav-links {
-		display: flex;
-		align-items: center;
-		gap: 0.4rem;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-	}
-	.nav-links :global(a) {
-		padding: 0.45rem 0.85rem;
-		color: var(--text-primary);
-		font-size: 0.9rem;
-		font-weight: 500;
-		border: 1px solid transparent;
-		border-radius: 6px;
-		text-decoration: none;
-		transition: all 0.15s ease;
-		white-space: nowrap;
-	}
-	.nav-links :global(a:hover) {
-		border-color: var(--border-subtle);
-		background: var(--bg-dark-core);
-		color: var(--text-accent);
-	}
-	/* Active page (HeaderLink adds .active) */
-	.nav-links :global(a.active) {
-		color: var(--text-accent);
-		border-color: var(--text-accent);
-	}
-	/* "Ask Jeffrey" call-to-action */
-	.nav-links :global(a.ask) {
-		color: var(--text-accent);
-		border-color: var(--border-subtle);
-	}
-	.nav-links :global(a.ask:hover) {
-		background: var(--accent-glow);
-	}
-	@media (max-width: 820px) {
-		nav { height: auto; flex-direction: column; align-items: flex-start; padding: 0.75em 1em; }
-		.nav-links { justify-content: flex-start; }
-		.brand-title { display: none; }
-	}
+  .tagcloud-page { padding-top: 0.5rem; }
+  .tc-head h1 { margin: 0 0 0.25rem; }
+  .tc-status {
+    margin: 0 0 1.75rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  .tc-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .tc-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem 0.6rem;
+    align-content: flex-start;
+    position: sticky;
+    top: 88px;
+  }
+  .tc-tag {
+    cursor: pointer;
+    line-height: 1.2;
+    background: var(--bg-panel);
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+    padding: 0.28em 0.75em;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .tc-tag:hover {
+    border-color: var(--text-accent);
+    background: var(--bg-panel-elevated);
+  }
+  .tc-tag.is-active {
+    background: var(--text-accent);
+    border-color: var(--text-accent);
+    color: var(--bg-dark-core);
+    font-weight: 600;
+  }
+  .tc-count {
+    margin-left: 0.45em;
+    font-size: 0.7em;
+    color: var(--text-secondary);
+  }
+  .tc-tag.is-active .tc-count { color: var(--bg-dark-core); opacity: 0.7; }
+  .tc-all { font-weight: 600; }
+
+  .tc-list ul { list-style: none; margin: 0; padding: 0; }
+  .tc-row {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .tc-row a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+  }
+  .tc-row a:hover .tc-title,
+  .tc-row a:hover .tc-date { color: var(--text-accent); }
+  .tc-title { font-weight: 600; line-height: 1.25; }
+  .tc-date {
+    flex: none;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+  .tc-rowtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.45rem;
+  }
+  .tc-rowtags:empty { display: none; }
+  .tc-pill {
+    cursor: pointer;
+    font-size: 0.72rem;
+    padding: 0.12em 0.6em;
+    border-radius: 999px;
+    background: var(--bg-panel-elevated);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    transition: all 0.15s;
+  }
+  .tc-pill:hover { color: var(--text-accent); border-color: var(--text-accent); }
+  .tc-pill.is-active {
+    background: var(--text-accent);
+    border-color: var(--text-accent);
+    color: var(--bg-dark-core);
+  }
+  .tc-empty { color: var(--text-secondary); padding: 1rem 0; }
+
+  @media (max-width: 720px) {
+    .tc-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    .tc-cloud { position: static; }
+  }
 </style>
+
+<script>
+  const cloud = document.querySelector('.tc-cloud');
+  const rows = Array.from(document.querySelectorAll('.tc-row'));
+  const status = document.getElementById('tc-status');
+  const empty = document.getElementById('tc-empty');
+  const total = rows.length;
+
+  function applyFilter(slug) {
+    let shown = 0;
+
+    cloud.querySelectorAll('.tc-tag').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.dataset.slug === slug);
+    });
+
+    rows.forEach((row) => {
+      const rowTags = row.dataset.tags ? row.dataset.tags.split(' ') : [];
+      const match = slug === '__all__' || rowTags.includes(slug);
+      row.hidden = !match;
+      if (match) shown += 1;
+      row.querySelectorAll('.tc-pill').forEach((pill) => {
+        pill.classList.toggle('is-active', slug !== '__all__' && pill.dataset.slug === slug);
+      });
+    });
+
+    if (slug === '__all__') {
+      status.textContent = 'Showing all ' + total + ' posts';
+    } else {
+      const btn = cloud.querySelector('.tc-tag[data-slug="' + slug + '"]');
+      const name = btn ? btn.dataset.name : slug;
+      const noun = shown === 1 ? 'post' : 'posts';
+      status.textContent = shown + ' ' + noun + ' tagged "' + name + '"';
+    }
+    empty.hidden = shown !== 0;
+  }
+
+  cloud.addEventListener('click', (e) => {
+    const btn = e.target.closest('.tc-tag');
+    if (!btn) return;
+    const slug = btn.dataset.slug;
+    const clearing = btn.classList.contains('is-active') && slug !== '__all__';
+    applyFilter(clearing ? '__all__' : slug);
+  });
+
+  document.querySelector('.tc-list').addEventListener('click', (e) => {
+    const pill = e.target.closest('.tc-pill');
+    if (!pill) return;
+    e.preventDefault();
+    applyFilter(pill.dataset.slug);
+  });
+</script>
