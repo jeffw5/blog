@@ -3,16 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
-const base = import.meta.env.BASE_URL; // "/blog/" — always trailing-slashed
+const base = import.meta.env.BASE_URL;
 
 const posts = (await getCollection('blog'))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-// "Knowledge Engineering" -> "knowledge-engineering" for safe matching
 const slugify = (s) =>
   s.toLowerCase().trim().replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '');
 
+// Count tag frequency across all non-draft posts
 const tagCounts = new Map();
 for (const p of posts) {
   for (const t of p.data.tags ?? []) {
@@ -20,63 +20,74 @@ for (const p of posts) {
   }
 }
 
-const tags = [...tagCounts.entries()]
+const baseTags = [...tagCounts.entries()]
   .map(([name, count]) => ({ name, count, slug: slugify(name) }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
-const counts = tags.map((t) => t.count);
+const counts = baseTags.map((t) => t.count);
 const minC = Math.min(...counts, 1);
 const maxC = Math.max(...counts, 1);
 
-// Scale a tag's count to a font size between 0.9rem and 1.9rem
 const sizeFor = (c) => {
   if (maxC === minC) return '1.15';
   const t = (c - minC) / (maxC - minC);
   return (0.9 + t * 1.0).toFixed(2);
 };
+
+// Everything the template needs, precomputed here so the markup stays plain.
+const cloudTags = baseTags.map((t) => ({
+  name: t.name,
+  count: t.count,
+  slug: t.slug,
+  style: `font-size:${sizeFor(t.count)}rem`,
+}));
+
+const listPosts = posts.map((post) => {
+  const tagList = post.data.tags ?? [];
+  return {
+    title: post.data.title,
+    href: `${base}blog/${post.id}/`,
+    pubDate: post.data.pubDate,
+    tagSlugs: tagList.map(slugify).join(' '),
+    tags: tagList.map((name) => ({ name, slug: slugify(name) })),
+  };
+});
+
+const totalPosts = posts.length;
 ---
 
 <BaseLayout title="Tags" description="Browse blog posts by tag">
   <div class="tagcloud-page">
     <header class="tc-head">
       <h1>Browse by Tag</h1>
-      <p class="tc-status" id="tc-status">Showing all {posts.length} posts</p>
+      <p class="tc-status" id="tc-status">Showing all {totalPosts} posts</p>
     </header>
 
     <div class="tc-layout">
-      <!-- LEFT: tag cloud -->
       <aside class="tc-cloud" aria-label="Tag cloud">
         <button class="tc-tag tc-all is-active" data-slug="__all__" data-name="All">
-          All <span class="tc-count">{posts.length}</span>
+          All <span class="tc-count">{totalPosts}</span>
         </button>
-        {tags.map((tag) => (
-          <button
-            class="tc-tag"
-            data-slug={tag.slug}
-            data-name={tag.name}
-            style={`font-size:${sizeFor(tag.count)}rem`}
-          >
+        {cloudTags.map((tag) => (
+          <button class="tc-tag" data-slug={tag.slug} data-name={tag.name} style={tag.style}>
             {tag.name}<span class="tc-count">{tag.count}</span>
           </button>
         ))}
       </aside>
 
-      <!-- RIGHT: post list -->
       <section class="tc-list" aria-label="Posts">
         <ul>
-          {posts.map((post) => (
-            <li class="tc-row" data-tags={(post.data.tags ?? []).map(slugify).join(' ')}>
-              <a href={`${base}blog/${post.id}/`}>
-                <span class="tc-title">{post.data.title}</span>
-                <span class="tc-date"><FormattedDate date={post.data.pubDate} /></span>
+          {listPosts.map((p) => (
+            <li class="tc-row" data-tags={p.tagSlugs}>
+              <a href={p.href}>
+                <span class="tc-title">{p.title}</span>
+                <span class="tc-date"><FormattedDate date={p.pubDate} /></span>
               </a>
-              {(post.data.tags ?? []).length > 0 && (
-                <div class="tc-rowtags">
-                  {post.data.tags.map((t) => (
-                    <span class="tc-pill" data-slug={slugify(t)}>{t}</span>
-                  ))}
-                </div>
-              )}
+              <div class="tc-rowtags">
+                {p.tags.map((t) => (
+                  <span class="tc-pill" data-slug={t.slug}>{t.name}</span>
+                ))}
+              </div>
             </li>
           ))}
         </ul>
@@ -86,7 +97,6 @@ const sizeFor = (c) => {
   </div>
 </BaseLayout>
 
-<!-- Widen the shared <main> just for this page (only ships on /tags) -->
 <style is:global>
   body main { width: 1000px; }
 </style>
@@ -106,14 +116,13 @@ const sizeFor = (c) => {
     align-items: start;
   }
 
-  /* Tag cloud */
   .tc-cloud {
     display: flex;
     flex-wrap: wrap;
     gap: 0.55rem 0.6rem;
     align-content: flex-start;
     position: sticky;
-    top: 88px; /* clears the 72px sticky header */
+    top: 88px;
   }
   .tc-tag {
     cursor: pointer;
@@ -143,7 +152,6 @@ const sizeFor = (c) => {
   .tc-tag.is-active .tc-count { color: var(--bg-dark-core); opacity: 0.7; }
   .tc-all { font-weight: 600; }
 
-  /* Post list */
   .tc-list ul { list-style: none; margin: 0; padding: 0; }
   .tc-row {
     padding: 0.9rem 0;
@@ -172,6 +180,7 @@ const sizeFor = (c) => {
     gap: 0.35rem;
     margin-top: 0.45rem;
   }
+  .tc-rowtags:empty { display: none; }
   .tc-pill {
     cursor: pointer;
     font-size: 0.72rem;
@@ -214,30 +223,31 @@ const sizeFor = (c) => {
       const rowTags = row.dataset.tags ? row.dataset.tags.split(' ') : [];
       const match = slug === '__all__' || rowTags.includes(slug);
       row.hidden = !match;
-      if (match) shown++;
+      if (match) shown += 1;
       row.querySelectorAll('.tc-pill').forEach((pill) => {
         pill.classList.toggle('is-active', slug !== '__all__' && pill.dataset.slug === slug);
       });
     });
 
     if (slug === '__all__') {
-      status.textContent = `Showing all ${total} posts`;
+      status.textContent = 'Showing all ' + total + ' posts';
     } else {
-      const name = cloud.querySelector(`.tc-tag[data-slug="${slug}"]`)?.dataset.name ?? slug;
-      status.textContent = `${shown} post${shown === 1 ? '' : 's'} tagged "${name}"`;
+      const btn = cloud.querySelector('.tc-tag[data-slug="' + slug + '"]');
+      const name = btn ? btn.dataset.name : slug;
+      const noun = shown === 1 ? 'post' : 'posts';
+      status.textContent = shown + ' ' + noun + ' tagged "' + name + '"';
     }
     empty.hidden = shown !== 0;
   }
 
-  // Click a tag in the cloud (click the active one again to clear)
   cloud.addEventListener('click', (e) => {
     const btn = e.target.closest('.tc-tag');
     if (!btn) return;
     const slug = btn.dataset.slug;
-    applyFilter(btn.classList.contains('is-active') && slug !== '__all__' ? '__all__' : slug);
+    const clearing = btn.classList.contains('is-active') && slug !== '__all__';
+    applyFilter(clearing ? '__all__' : slug);
   });
 
-  // Click a pill under a post to filter by that tag too
   document.querySelector('.tc-list').addEventListener('click', (e) => {
     const pill = e.target.closest('.tc-pill');
     if (!pill) return;
