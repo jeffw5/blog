@@ -5,7 +5,6 @@ import HeaderLink from './HeaderLink.astro';
 // return there. Blog is the only internal section.
 const SITE = 'https://jeffw5.github.io/Website';
 const LOGO = 'https://jeffw5.github.io/Website/logo.png';
-const TAGS_HREF = `${import.meta.env.BASE_URL}tags`;
 ---
 <header>
 	<nav>
@@ -21,7 +20,6 @@ const TAGS_HREF = `${import.meta.env.BASE_URL}tags`;
 			<a href={`${SITE}/services.html`}>Services</a>
 			<a href="https://jeffw5.github.io/Value/index.html">Demos</a>
 			<HeaderLink href={import.meta.env.BASE_URL}>Blog</HeaderLink>
-			<HeaderLink href={TAGS_HREF}>Tags</HeaderLink>
 			<a class="ask" href={`${SITE}/avatar.html`}>Ask Jeffrey ›</a>
 		</div>
 	</nav>
