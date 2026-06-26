@@ -4,6 +4,8 @@ description: The Power of Positive Thinking
 pubDate: 2021-01-02T20:15:00
 updatedDate: 2026-06-24T20:15:00
 heroImage: /blog/images/pasted-image-1782350242867.png
+tags:
+  - Psychology
 ---
 
 Just watched this TED Talk (several times) to absorb the messages from Prof. Martin Seligman. I can't think of a more relevant and important set of lessons to internalize and action in the next year.
