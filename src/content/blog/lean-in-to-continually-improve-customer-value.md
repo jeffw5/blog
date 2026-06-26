@@ -4,6 +4,8 @@ description: Improving Customer Value
 pubDate: 2021-01-24T14:40:00
 updatedDate: 2026-06-24T19:14:00
 heroImage: /blog/images/pasted-image-1782330075027.png
+tags:
+  - Customer Focus
 ---
 
 I recently listened to a great conversation about Six Sigma from an interview with an expert (Rick Morrow).
