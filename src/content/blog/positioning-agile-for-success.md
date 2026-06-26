@@ -4,6 +4,8 @@ description: Applying Agile to Deliver Value
 pubDate: 2022-06-27T21:58:00
 updatedDate: 2026-06-24T21:58:00
 heroImage: /blog/images/pasted-image-1782356313714.png
+tags:
+  - Agile
 ---
 
 Agile emerged in the late ’90s and took off in the early 2000s. Typical Agile projects were web-based since the DOT.COM era was booming, and companies were trying to erect scaffolding for online transactions and interactions using an ASAP model.
