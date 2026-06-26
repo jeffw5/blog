@@ -4,7 +4,7 @@ description: |-
   AI is not the solution to every problem
   Let's not loose site of the role that technology plays
 pubDate: 2022-06-09T22:36:00
-updatedDate: 2026-06-25T22:41:00
+updatedDate: 2026-06-25T22:44:00
 heroImage: /blog/images/pasted-image-1782444538926.png
 tags:
   - AI
