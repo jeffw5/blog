@@ -4,6 +4,9 @@ description: Trust & Understanding in the Digital Age
 pubDate: 2020-11-20T20:28:00
 updatedDate: 2026-06-24T20:28:00
 heroImage: /blog/images/pasted-image-1782350932242.png
+tags:
+  - Customer Focus
+  - TRUST
 ---
 
 A colleague recently sent me an article from Erica Dhawan (thought leader on collaboration). I reviewed one of her courses (see link below) to gain a few insights into this emerging capability for improving collaboration and TRUST via online conferencing.
