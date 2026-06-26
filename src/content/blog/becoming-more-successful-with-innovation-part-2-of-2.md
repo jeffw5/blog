@@ -4,6 +4,8 @@ description: Driving Innovation
 pubDate: 2022-06-09T12:43:00
 updatedDate: 2026-06-25T12:43:00
 heroImage: /blog/images/pasted-image-1782409877284.png
+tags:
+  - Innovation
 ---
 
 Now that you have a sense of WHAT innovation is (see Part 1), you can begin developing a process for institutionalizing innovation in your own organization.
