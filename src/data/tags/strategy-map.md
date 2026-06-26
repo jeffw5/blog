@@ -1,3 +1,3 @@
 ---
-title: Strategy Map
+title: Strategy
 ---
