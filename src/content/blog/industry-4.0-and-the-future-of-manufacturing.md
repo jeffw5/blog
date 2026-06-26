@@ -4,7 +4,8 @@ description: The Future of Manufacturing in the age of AI & Robotics
 pubDate: 2021-05-12T22:51:00
 updatedDate: 2026-06-25T22:52:00
 heroImage: /blog/images/pasted-image-1782445984086.png
-tags: []
+tags:
+  - Supply Chain
 ---
 
 I would like to share a few thoughts about leveraging modeling and converge architecture disciplines to support manufacturing organizations (aerospace, automotive, pharma, appliances, electronics) to leverage **Industry 4.0.** Much of the recent excitement around IoT is focused on auditing performance and monitoring anomalies, which is a natural extension of practice that we’ve had for years around instrumentation. The exponential growth in storage capacity & compute resources has opened the door for mining this information to identify opportunities in asset lifecycles for optimizing maintenance in alignment with operating effectiveness (efficiency, quality, performance). There are a few key areas where models and architecture can be introduced to further the advancement of Industry 4.0:
