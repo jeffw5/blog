@@ -4,6 +4,9 @@ description: Applying Systems Thinking for Your Enterprise
 pubDate: 2021-08-10T21:46:00
 updatedDate: 2026-06-24T21:46:00
 heroImage: /blog/images/pasted-image-1782355583648.png
+tags:
+  - Architecture
+  - Design Thinking
 ---
 
 I recently read an article that discussed the challenges with articulating value with enterprise architecture (EA) as a discipline and practice. The article mentioned a key phrase, "evidence-based," which seems to suggest the lack of scientific thinking and measurement associated with EA. There is no one agreed-upon methodology and nomenclature used by enterprise architects, nor is there a standard definition of EA or what the role and responsibilities should encompass. When positions taken by enterprise architects (another curious term since no other profession seems to have an enterprise role in their strata of titles) are challenged by IT or Business personnel (to say nothing of other architects), the discussions are not rooted in evidence. Oftentimes, these discussions turn into justification exercises that attempt to map value (another term subject to interpretation) retroactively into the artifacts and recommendations to gain support.
