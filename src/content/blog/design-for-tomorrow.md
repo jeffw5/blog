@@ -20,4 +20,12 @@ Organizations exist to deliver value every day to every customer, member, patien
 
 That is where most organizations find themselves. They are hoping that investments in technology will save them. But, technology is an accelerator and can amplify both the good and bad decisions around change and the manner in which change is executed. 
 
+> **A BCG/MIT study revealed:**
+
+> _90% of executives find sustainability to be important..._
+
+> _But only 60% of companies incorporate sustainability in their strategy_
+
+> _Only 25% of companies incorporated sustainability into their business model_
+
 ​The Value Enablement Group has developed a number of services and accelerators to help organizations manage the accelerating pace of change. We can help plan, design, and guide the implementation of incremental improvements or build a platform for managing complexity and accelerate decision making with a Digital Twin.
