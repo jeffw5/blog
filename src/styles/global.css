@@ -4,6 +4,9 @@
   jeffw5.github.io/Website. Dark theme, same accent, same typography.
 */
 
+/* Load the main site's font families so the blog truly matches it. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Bebas+Neue&display=swap');
+
 :root {
 	/* Brand palette — mirrors the main site */
 	--bg-dark-core: #090d16;
@@ -15,6 +18,11 @@
 	--text-secondary: #9ca3af;
 	--text-accent: #38bdf8;
 	--accent-glow: rgba(56, 189, 248, 0.15);
+
+	/* Typography Families — match main site (Website/index.html) */
+	--serif: 'Cormorant Garamond', Georgia, serif;
+	--mono: 'DM Mono', 'Courier New', monospace;
+	--display: 'Bebas Neue', sans-serif;
 
 	/* Blueprint page canvas + grid overlay (ported from services.html) */
 	--blueprint: #0d1b2a;
@@ -39,7 +47,7 @@
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+	font-family: var(--serif);
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -170,3 +178,23 @@ body::before {
 	pointer-events: none;
 	z-index: -1;
 }
+
+/* ============================================================
+   OPTIONAL — Bebas Neue display headings (full main-site parity)
+   The home page renders its biggest titles (.section-title,
+   .stat-number, hero name) in Bebas Neue. With the body rule
+   above, blog headings already inherit Cormorant serif — which
+   matches the home page's section subtitles and card titles.
+   Uncomment below ONLY if you want post/section H1–H2 to use the
+   loud Bebas display face. Note: Bebas Neue is uppercase-only, so
+   headings will render in all caps — great for section banners,
+   often too heavy for article titles. Test before shipping.
+   ============================================================ */
+/*
+h1, h2 {
+	font-family: var(--display);
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	line-height: 1;
+}
+*/
