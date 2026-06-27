@@ -5,7 +5,7 @@ pubDate: 2009-03-03T09:52:00
 updatedDate: 2026-06-27T09:52:00
 heroImage: /blog/images/pasted-image-1782571983269.png
 tags:
-  - BizDNA
+  - Project Management
 ---
 
 **Pain**
