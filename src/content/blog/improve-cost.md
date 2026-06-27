@@ -5,7 +5,7 @@ pubDate: 2009-02-02T09:35:00
 updatedDate: 2026-06-27T09:35:00
 heroImage: /blog/images/pasted-image-1782570944349.png
 tags:
-  - BizDNA
+  - Turn Pain into Profit
 ---
 
 **Pain**
