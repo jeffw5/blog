@@ -24,9 +24,11 @@ collections:
       - { name: pubDate, label: Publish Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
       - { name: updatedDate, label: Updated Date, widget: datetime, required: false, format: "YYYY-MM-DDTHH:mm:ss" }
       - { name: heroImage, label: Hero Image, widget: image, required: false }
-      - { name: tags, label: Tags, widget: relation, collection: tags, value_field: title, display_fields: [title], search_fields: [title], multiple: true, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
       - { name: body, label: Body, widget: markdown }
 
+  # Optional: this collection is no longer required by the blog tags field above,
+  # but it's harmless to keep if you want to manage tag entries separately.
   - name: tags
     label: Tags
     folder: src/data/tags
