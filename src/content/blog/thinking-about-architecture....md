@@ -4,7 +4,8 @@ description: Design Thinking Applied to Technology
 pubDate: 2020-12-01T12:00:00
 updatedDate: 2026-06-26T20:21:00
 heroImage: /blog/images/pasted-image-1782523190410.png
-tags: []
+tags:
+  - Architecture
 ---
 
 I try to think about architecture in simple terms. Architecting is about connecting the dots (physical, perceptual, conceptual, financial, and temporal).
