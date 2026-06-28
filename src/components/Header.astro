@@ -1,5 +1,4 @@
 ---
-import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 // Main site lives in a different repo at /Website. The logo and "Home" always
 // return there. Blog is the only internal section.  
@@ -12,7 +11,6 @@ const LOGO = 'https://jeffw5.github.io/Website/logo.png';
 			<img src={LOGO} alt="The Value Enablement Group" class="brand-logo"
 				onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
 			<span class="brand-fallback">VEG</span>
-			<span class="brand-title">{SITE_TITLE}</span>
 		</a>
 		<div class="nav-links">
 			<a href={`${SITE}/about.html`}>About</a>
@@ -38,9 +36,9 @@ const LOGO = 'https://jeffw5.github.io/Website/logo.png';
 		margin: 0 auto;
 		padding: 0 1.5em;
 		height: 72px;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;   /* brand | centered menu | balancing space */
 		align-items: center;
-		justify-content: space-between;
 		gap: 1.5rem;
 	}
 	/* Brand / logo — always returns to the main site */
@@ -50,6 +48,7 @@ const LOGO = 'https://jeffw5.github.io/Website/logo.png';
 		gap: 0.7rem;
 		text-decoration: none;
 		flex-shrink: 0;
+		justify-self: start;
 	}
 	.brand-logo {
 		width: 44px;
@@ -68,20 +67,14 @@ const LOGO = 'https://jeffw5.github.io/Website/logo.png';
 		border-radius: 8px;
 		padding: 0.35rem 0.5rem;
 	}
-	.brand-title {
-		font-size: 1rem;
-		font-weight: 600;
-		color: var(--text-primary);
-		letter-spacing: -0.02em;
-		white-space: nowrap;
-	}
 	/* Nav links — mirrors the main-site nav (DM Mono · uppercase · gold accent) */
 	.nav-links {
 		display: flex;
 		align-items: center;
 		gap: 1.75rem;
 		flex-wrap: wrap;
-		justify-content: flex-end;
+		justify-self: center;
+		justify-content: center;
 	}
 	.nav-links :global(a) {
 		font-family: var(--mono);
@@ -111,8 +104,8 @@ const LOGO = 'https://jeffw5.github.io/Website/logo.png';
 		opacity: 0.85;
 	}
 	@media (max-width: 820px) {
-		nav { height: auto; flex-direction: column; align-items: flex-start; padding: 0.75em 1em; }
-		.nav-links { justify-content: flex-start; }
-		.brand-title { display: none; }
+		nav { height: auto; grid-template-columns: 1fr; justify-items: center; gap: 0.75rem; padding: 0.75em 1em; }
+		.brand { justify-self: center; }
+		.nav-links { justify-self: center; justify-content: center; }
 	}
 </style>
