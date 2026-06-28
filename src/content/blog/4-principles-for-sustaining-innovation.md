@@ -3,7 +3,7 @@ title: 4 Principles for Sustaining Innovation
 description: Innovation occurs episodically, but it needs to be consistently supported for long term value
 pubDate: 2016-04-07T22:19:00
 updatedDate: 2026-06-27T22:20:00
-heroImage: /blog/images/pasted-image-1782616780633.png
+heroImage: /images/pasted-image-1782616780633.png
 tags:
   - Innovation
   - Design Thinking
