@@ -18,6 +18,7 @@
 	--text-secondary: #9ca3af;
 	--text-accent: #38bdf8;
 	--accent-glow: rgba(56, 189, 248, 0.15);
+	--accent-gold: #c8a96e;        /* main-site nav accent (Website/) — used by the site menu */
 
 	/* Typography Families — match main site (Website/index.html) */
 	--serif: 'Cormorant Garamond', Georgia, serif;
