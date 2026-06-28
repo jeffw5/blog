@@ -6,11 +6,11 @@ backend:
 
 # Where uploaded images are committed, and the URL they resolve to on the live site.
 media_folder: "public/images"
-public_folder: "/blog/images"
+public_folder: "/images"
 
 # Nice preview links in the editor
-site_url: https://jeffw5.github.io/blog
-display_url: https://jeffw5.github.io/blog
+site_url: https://blog.enablingvalue.com
+display_url: https://blog.enablingvalue.com
 
 collections:
   - name: blog
