@@ -3,7 +3,7 @@ title: 10 Ten List of Twitter "Hints"
 description: Tips & Hints
 pubDate: 2009-10-06T15:04:00
 updatedDate: 2026-06-27T15:04:00
-heroImage: /blog/images/pasted-image-1782590622051.png
+heroImage: /images/pasted-image-1782590622051.png
 tags:
   - Learning
 ---

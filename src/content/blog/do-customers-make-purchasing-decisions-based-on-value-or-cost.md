@@ -3,7 +3,7 @@ title: Do customers make purchasing decisions based on value or cost ?
 description: Value First, Deal Second
 pubDate: 2018-05-10T07:58:00
 updatedDate: 2026-06-26T07:58:00
-heroImage: /blog/images/pasted-image-1782478683321.png
+heroImage: /images/pasted-image-1782478683321.png
 tags:
   - Customer Focus
   - Value

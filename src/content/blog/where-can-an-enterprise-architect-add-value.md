@@ -3,7 +3,7 @@ title: Where can an Enterprise Architect add value ?
 description: Architecture should reduce risk and enable value
 pubDate: 2012-11-19T07:23:00
 updatedDate: 2026-06-27T07:23:00
-heroImage: /blog/images/pasted-image-1782563044542.png
+heroImage: /images/pasted-image-1782563044542.png
 tags:
   - Architecture
   - Business Architecture

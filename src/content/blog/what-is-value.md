@@ -3,7 +3,7 @@ title: What is Value ?
 description: How do we know value when we feel it?
 pubDate: 2017-01-09T07:21:00
 updatedDate: 2026-06-27T07:22:00
-heroImage: /blog/images/pasted-image-1782562936446.png
+heroImage: /images/pasted-image-1782562936446.png
 tags:
   - Value
   - Monitoring & Measurement

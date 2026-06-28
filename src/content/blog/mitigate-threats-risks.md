@@ -3,7 +3,7 @@ title: Mitigate Threats & Risks
 description: Pain vs Profit
 pubDate: 2009-04-09T10:59:00
 updatedDate: 2026-06-27T10:59:00
-heroImage: /blog/images/pasted-image-1782575961453.png
+heroImage: /images/pasted-image-1782575961453.png
 tags:
   - Turn Pain into Profit
 ---

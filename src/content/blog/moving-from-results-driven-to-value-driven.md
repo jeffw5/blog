@@ -3,7 +3,7 @@ title: Moving from Results-Driven to Value-Driven
 description: Value can only be measured with outcomes (Impacts on jobs)
 pubDate: 2022-01-10T15:03:00
 updatedDate: 2026-06-27T15:03:00
-heroImage: /blog/images/pasted-image-1782590478692.png
+heroImage: /images/pasted-image-1782590478692.png
 tags:
   - Design Thinking
   - Monitoring & Measurement

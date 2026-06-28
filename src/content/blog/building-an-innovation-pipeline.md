@@ -3,7 +3,7 @@ title: Building an Innovation Pipeline
 description: Ideate, Innovate, Create
 pubDate: 2017-09-03T11:29:00
 updatedDate: 2026-06-27T11:29:00
-heroImage: /blog/images/pasted-image-1782577908766.png
+heroImage: /images/pasted-image-1782577908766.png
 tags:
   - Innovation
 ---

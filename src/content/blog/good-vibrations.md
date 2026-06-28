@@ -3,7 +3,7 @@ title: Good Vibrations !
 description: Extending Human Senses with Digital Senses
 pubDate: 2020-02-10T09:06:00
 updatedDate: 2026-06-26T09:06:00
-heroImage: /blog/images/pasted-image-1782482805762.png
+heroImage: /images/pasted-image-1782482805762.png
 tags:
   - Healthcare
   - Digital Transformation

@@ -3,7 +3,7 @@ title: How often should you check LinkedIn ?
 description: Business Networking
 pubDate: 2019-07-14T08:15:00
 updatedDate: 2026-06-26T08:15:00
-heroImage: /blog/images/pasted-image-1782479758698.png
+heroImage: /images/pasted-image-1782479758698.png
 tags:
   - Psychology
 ---

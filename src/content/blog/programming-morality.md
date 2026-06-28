@@ -3,7 +3,7 @@ title: Programming Morality
 description: Designing Morality into Technology
 pubDate: 2024-06-24T07:38:00
 updatedDate: 2026-06-26T07:38:00
-heroImage: /blog/images/pasted-image-1782477536160.png
+heroImage: /images/pasted-image-1782477536160.png
 tags:
   - Social Engineering
   - AI

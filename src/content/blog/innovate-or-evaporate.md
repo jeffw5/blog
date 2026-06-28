@@ -3,7 +3,7 @@ title: Innovate or Evaporate !
 description: Building a culture and discipline for innovation
 pubDate: 2015-06-23T11:22:00
 updatedDate: 2026-06-27T11:22:00
-heroImage: /blog/images/pasted-image-1782577320958.png
+heroImage: /images/pasted-image-1782577320958.png
 tags:
   - BizDNA
   - Innovation

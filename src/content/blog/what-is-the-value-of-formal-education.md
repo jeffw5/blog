@@ -3,7 +3,7 @@ title: What is the "value" of Formal Education?
 description: What is the value of education period?
 pubDate: 2025-04-25T15:11:00
 updatedDate: 2026-06-27T15:11:00
-heroImage: /blog/images/pasted-image-1782591139791.png
+heroImage: /images/pasted-image-1782591139791.png
 tags:
   - Education
   - Monitoring & Measurement

@@ -3,7 +3,7 @@ title: Knowledge engineering coming to a company near you
 description: Knowledge Engineering is the foundation for designing, building, and managing the lifecycle of knowledge assets
 pubDate: 2023-02-07T23:57:00
 updatedDate: 2026-06-24T23:57:00
-heroImage: /blog/images/pasted-image-1782363479401.png
+heroImage: /images/pasted-image-1782363479401.png
 tags:
   - Knowledge Engineering
 ---

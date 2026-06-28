@@ -5,7 +5,7 @@ description: |-
   Taking the Long View Now
 pubDate: 2018-04-16T11:39:00
 updatedDate: 2026-06-27T11:39:00
-heroImage: /blog/images/pasted-image-1782578389114.png
+heroImage: /images/pasted-image-1782578389114.png
 tags:
   - Business Model
 ---

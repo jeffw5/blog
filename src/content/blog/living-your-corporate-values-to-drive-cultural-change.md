@@ -3,7 +3,7 @@ title: '"Living" your Corporate Values to Drive Cultural Change'
 description: Driving Cultural Change
 pubDate: 2014-08-03T22:01:00
 updatedDate: 2026-06-27T22:01:00
-heroImage: /blog/images/pasted-image-1782615705090.png
+heroImage: /images/pasted-image-1782615705090.png
 tags:
   - Culture
 ---

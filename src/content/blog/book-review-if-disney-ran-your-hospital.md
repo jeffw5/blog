@@ -3,7 +3,7 @@ title: 'Book Review: If Disney Ran Your Hospital'
 description: What if we treated patients like customers and tried to anticipate their needs instead of focusing on profit first?
 pubDate: 2012-05-10T15:44:00
 updatedDate: 2026-06-27T15:44:00
-heroImage: /blog/images/pasted-image-1782593395795.png
+heroImage: /images/pasted-image-1782593395795.png
 tags:
   - Healthcare
   - Customer Focus

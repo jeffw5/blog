@@ -3,7 +3,7 @@ title: How do we define Enterprise Architecture ?
 description: Architecture is about Design & Discipline
 pubDate: 2018-07-21T12:22:00
 updatedDate: 2026-06-27T12:22:00
-heroImage: /blog/images/pasted-image-1782580951916.png
+heroImage: /images/pasted-image-1782580951916.png
 tags:
   - Architecture
 ---

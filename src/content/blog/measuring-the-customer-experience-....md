@@ -3,7 +3,7 @@ title: Measuring the customer "experience"...
 description: Measuring What Customers Want
 pubDate: 2017-04-10T10:37:00
 updatedDate: 2026-06-27T10:37:00
-heroImage: /blog/images/pasted-image-1782574702383.png
+heroImage: /images/pasted-image-1782574702383.png
 tags:
   - Customer Focus
   - Monitoring & Measurement

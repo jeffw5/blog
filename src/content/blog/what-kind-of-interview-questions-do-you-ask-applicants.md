@@ -3,7 +3,7 @@ title: What kind of interview questions do you ask applicants?
 description: The Art of Interviewing
 pubDate: 2018-11-07T08:09:00
 updatedDate: 2026-06-26T08:09:00
-heroImage: /blog/images/pasted-image-1782479374046.png
+heroImage: /images/pasted-image-1782479374046.png
 tags:
   - Human Resources
   - Leadership

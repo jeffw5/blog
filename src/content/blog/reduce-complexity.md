@@ -3,7 +3,7 @@ title: Reduce Complexity
 description: Pain vs Profit
 pubDate: 2009-03-20T11:08:00
 updatedDate: 2026-06-27T11:08:00
-heroImage: /blog/images/pasted-image-1782576512890.png
+heroImage: /images/pasted-image-1782576512890.png
 tags:
   - Turn Pain into Profit
 ---

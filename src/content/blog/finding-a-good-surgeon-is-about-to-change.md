@@ -3,7 +3,7 @@ title: Finding a Good Surgeon is About to Change
 description: Impact of Robotics on Healthcare
 pubDate: 2022-12-12T08:35:00
 updatedDate: 2026-06-26T08:35:00
-heroImage: /blog/images/pasted-image-1782480950817.png
+heroImage: /images/pasted-image-1782480950817.png
 tags:
   - Robotics
   - Healthcare

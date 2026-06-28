@@ -3,7 +3,7 @@ title: 'Book Review: Enterprise Architecture as a Strategy'
 description: Enterprise Architecture is a discipline that should be incorporated into Design Time & Run Time to enable strategy
 pubDate: 2019-04-20T14:31:00
 updatedDate: 2026-06-27T14:31:00
-heroImage: /blog/images/pasted-image-1782588717092.png
+heroImage: /images/pasted-image-1782588717092.png
 tags:
   - Architecture
   - Strategy

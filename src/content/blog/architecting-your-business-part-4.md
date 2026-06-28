@@ -3,7 +3,7 @@ title: Architecting Your Business (Part 4)
 description: Making Business Architecture Actionable
 pubDate: 2023-04-05T06:42:00
 updatedDate: 2026-06-26T06:43:00
-heroImage: /blog/images/pasted-image-1782474171714.png
+heroImage: /images/pasted-image-1782474171714.png
 tags:
   - Business Model
   - Capability Map

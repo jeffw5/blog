@@ -3,7 +3,7 @@ title: Democratizing Data & Knowledge
 description: Data & Knowledge should be shared by all
 pubDate: 2022-04-05T14:43:00
 updatedDate: 2026-06-26T14:43:00
-heroImage: /blog/images/pasted-image-1782503042272.png
+heroImage: /images/pasted-image-1782503042272.png
 tags:
   - AI
   - Social Engineering

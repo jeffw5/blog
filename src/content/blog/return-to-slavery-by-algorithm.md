@@ -5,7 +5,7 @@ description: |-
   Do we work to “serve” algorithms?
 pubDate: 2023-02-15T06:36:00
 updatedDate: 2026-06-26T06:37:00
-heroImage: /blog/images/pasted-image-1782473782709.png
+heroImage: /images/pasted-image-1782473782709.png
 tags:
   - Social Engineering
   - AI

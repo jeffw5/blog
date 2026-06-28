@@ -3,7 +3,7 @@ title: Architecting Your Business (Part 3)
 description: Making Business Architecture Actionable
 pubDate: 2023-04-05T06:45:00
 updatedDate: 2026-06-26T06:45:00
-heroImage: /blog/images/pasted-image-1782474343454.png
+heroImage: /images/pasted-image-1782474343454.png
 tags:
   - Architecture
   - Business Model

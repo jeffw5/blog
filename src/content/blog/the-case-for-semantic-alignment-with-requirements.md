@@ -3,7 +3,7 @@ title: The case for Semantic Alignment with Requirements
 description: Promoting consistent understanding for Requirements Management
 pubDate: 2025-03-15T21:48:00
 updatedDate: 2026-06-27T21:48:00
-heroImage: /blog/images/pasted-image-1782614907179.png
+heroImage: /images/pasted-image-1782614907179.png
 tags:
   - Requirements Engineering
   - Knowledge Engineering

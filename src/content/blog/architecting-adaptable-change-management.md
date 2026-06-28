@@ -3,7 +3,7 @@ title: Architecting "Adaptable Change Management"
 description: Designing for Change
 pubDate: 2021-08-04T23:01:00
 updatedDate: 2026-06-26T23:01:00
-heroImage: /blog/images/pasted-image-1782532897357.png
+heroImage: /images/pasted-image-1782532897357.png
 tags:
   - Architecture
   - Project Management

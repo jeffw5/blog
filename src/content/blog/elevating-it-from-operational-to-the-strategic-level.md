@@ -3,7 +3,7 @@ title: Elevating IT from Operational to the Strategic Level
 description: Technology enables Strategy & Operations
 pubDate: 2019-02-15T07:03:00
 updatedDate: 2026-06-27T07:03:00
-heroImage: /blog/images/pasted-image-1782561832285.png
+heroImage: /images/pasted-image-1782561832285.png
 tags:
   - Technical Services
   - Strategy

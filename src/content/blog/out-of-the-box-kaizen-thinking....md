@@ -3,7 +3,7 @@ title: Out-of-the-Box Kaizen Thinking...
 description: Thinking out of the box and getting rid of the box
 pubDate: 2018-03-13T14:50:00
 updatedDate: 2026-06-27T14:50:00
-heroImage: /blog/images/pasted-image-1782476579282.png
+heroImage: /images/pasted-image-1782476579282.png
 tags:
   - Innovation
   - Strategy

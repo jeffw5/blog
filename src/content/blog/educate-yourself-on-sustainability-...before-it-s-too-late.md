@@ -3,7 +3,7 @@ title: Educate Yourself on Sustainability ...before it's too late
 description: We are all part of one ecosystem. Sustainability ensures our survival.
 pubDate: 2023-10-09T14:27:00
 updatedDate: 2026-06-27T14:27:00
-heroImage: /blog/images/pasted-image-1782588455315.png
+heroImage: /images/pasted-image-1782588455315.png
 tags:
   - Social Engineering
   - Requirements Engineering

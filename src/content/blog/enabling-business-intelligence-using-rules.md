@@ -3,7 +3,7 @@ title: Enabling Business Intelligence using Rules
 description: Rules-Driven Intelligence
 pubDate: 2020-05-06T21:34:00
 updatedDate: 2026-06-27T21:34:00
-heroImage: /blog/images/pasted-image-1782589368305.png
+heroImage: /images/pasted-image-1782589368305.png
 tags: []
 ---
 

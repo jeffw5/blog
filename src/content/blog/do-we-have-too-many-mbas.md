@@ -3,7 +3,7 @@ title: Do We Have Too Many MBAs?
 description: What Value do MBAs Provide?
 pubDate: 2020-12-17T20:32:00
 updatedDate: 2026-06-24T20:32:00
-heroImage: /blog/images/pasted-image-1782351285278.png
+heroImage: /images/pasted-image-1782351285278.png
 tags:
   - Leadership
 ---

@@ -3,7 +3,7 @@ title: The Cartography of Business
 description: Building Your Map of Maps
 pubDate: 2018-10-12T07:43:00
 updatedDate: 2026-06-26T07:43:00
-heroImage: /blog/images/pasted-image-1782477832554.png
+heroImage: /images/pasted-image-1782477832554.png
 tags:
   - Business Model
   - Architecture

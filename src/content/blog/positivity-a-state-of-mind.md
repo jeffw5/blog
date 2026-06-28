@@ -3,7 +3,7 @@ title: 'Positivity: A State of Mind'
 description: Promoting Positivity through Leadership
 pubDate: 2018-09-07T07:55:00
 updatedDate: 2026-06-26T07:55:00
-heroImage: /blog/images/pasted-image-1782478443248.png
+heroImage: /images/pasted-image-1782478443248.png
 tags:
   - Psychology
   - Customer Focus

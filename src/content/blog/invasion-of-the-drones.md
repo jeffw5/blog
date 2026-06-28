@@ -3,7 +3,7 @@ title: Invasion of the Drones
 description: Rise of the machines?
 pubDate: 2022-03-11T17:40:00
 updatedDate: 2026-06-26T17:39:00
-heroImage: /blog/images/pasted-image-1782513535876.png
+heroImage: /images/pasted-image-1782513535876.png
 tags: []
 ---
 

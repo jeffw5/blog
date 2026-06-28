@@ -3,7 +3,7 @@ title: Biz:DNA
 description: Managing Change & Simplify Complexity
 pubDate: 2017-08-04T11:21:00
 updatedDate: 2026-06-27T11:21:00
-heroImage: /blog/images/pasted-image-1782577065478.png
+heroImage: /images/pasted-image-1782577065478.png
 tags:
   - BizDNA
 ---
@@ -26,7 +26,7 @@ Now, that we understand how to create the basic building blocks, we can begin er
 - Bounded set of context & scenarios
 - Extensions to other Domains (I/O)​
 
-![Digital Twin for Navigating Change](/blog/images/pasted-image-1782577167690.png "Digital Twin for Navigating Change")
+![Digital Twin for Navigating Change](/images/pasted-image-1782577167690.png "Digital Twin for Navigating Change")
 
 As more business domains are established, a larger picture of the digital landscape emerges. This larger landscape is called a digital twin. It provides an organization with an ability to run simulations, find root causes, and analyze the impact of changes that occur in the organization or from outside forces (in real-time and simultaneously).
 

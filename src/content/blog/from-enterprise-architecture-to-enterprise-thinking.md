@@ -3,7 +3,7 @@ title: From Enterprise Architecture to Enterprise Thinking
 description: Applying Systems Thinking for Your Enterprise
 pubDate: 2021-08-10T21:46:00
 updatedDate: 2026-06-24T21:46:00
-heroImage: /blog/images/pasted-image-1782355583648.png
+heroImage: /images/pasted-image-1782355583648.png
 tags:
   - Architecture
   - Design Thinking

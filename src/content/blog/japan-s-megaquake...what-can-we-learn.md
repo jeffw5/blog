@@ -3,7 +3,7 @@ title: Japan's Megaquake...What can we learn ?
 description: How do we prepare for the “Big One”?
 pubDate: 2020-02-05T12:26:00
 updatedDate: 2026-06-27T12:26:00
-heroImage: /blog/images/pasted-image-1782581245229.png
+heroImage: /images/pasted-image-1782581245229.png
 tags:
   - Systems Engineering
   - Risk & Exposure

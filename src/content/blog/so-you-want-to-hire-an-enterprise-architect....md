@@ -3,7 +3,7 @@ title: So, you want to hire an Enterprise Architect...
 description: Hiring an “enterprise" Change Agent
 pubDate: 2016-10-15T12:11:00
 updatedDate: 2026-06-27T12:11:00
-heroImage: /blog/images/pasted-image-1782580267558.png
+heroImage: /images/pasted-image-1782580267558.png
 tags:
   - Architecture
   - Governance

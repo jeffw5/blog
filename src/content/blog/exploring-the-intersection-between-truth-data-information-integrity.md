@@ -3,7 +3,7 @@ title: Exploring the "intersection" between TRUTH & Data/Information Integrity
 description: Trust, Truth, Integrity
 pubDate: 2025-09-04T17:41:00
 updatedDate: 2026-06-26T17:41:00
-heroImage: /blog/images/pasted-image-1782513728116.png
+heroImage: /images/pasted-image-1782513728116.png
 tags:
   - TRUST
   - Leadership

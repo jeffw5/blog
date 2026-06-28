@@ -3,7 +3,7 @@ title: Improve Measure
 description: Pain vs Profit
 pubDate: 2009-04-18T11:11:00
 updatedDate: 2026-06-27T11:11:00
-heroImage: /blog/images/pasted-image-1782576729050.png
+heroImage: /images/pasted-image-1782576729050.png
 tags:
   - Turn Pain into Profit
 ---

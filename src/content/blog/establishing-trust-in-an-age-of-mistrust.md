@@ -3,7 +3,7 @@ title: Establishing TRUST in an age of mistrust
 description: Trust is the basis for all relationships and foundational for business.
 pubDate: 2022-06-22T23:39:00
 updatedDate: 2026-06-24T23:40:00
-heroImage: /blog/images/pasted-image-1782362409113.png
+heroImage: /images/pasted-image-1782362409113.png
 tags:
   - TRUST
 ---

@@ -3,7 +3,7 @@ title: AI vs Humans
 description: Where should we draw the line?
 pubDate: 2026-06-27T10:04:00
 updatedDate: 2026-06-27T10:04:00
-heroImage: /blog/images/pasted-image-1782572736956.png
+heroImage: /images/pasted-image-1782572736956.png
 tags: []
 ---
 

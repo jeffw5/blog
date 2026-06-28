@@ -3,7 +3,7 @@ title: Improving Agility
 description: Pain vs Profit
 pubDate: 2009-01-08T09:30:00
 updatedDate: 2026-06-27T09:30:00
-heroImage: /blog/images/pasted-image-1782571042452.png
+heroImage: /images/pasted-image-1782571042452.png
 tags:
   - Agile
   - Turn Pain into Profit

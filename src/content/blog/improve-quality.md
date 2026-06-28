@@ -3,7 +3,7 @@ title: Improve Quality
 description: Pain vs Profit
 pubDate: 2009-02-05T10:46:00
 updatedDate: 2026-06-27T10:46:00
-heroImage: /blog/images/pasted-image-1782575247202.png
+heroImage: /images/pasted-image-1782575247202.png
 tags:
   - Turn Pain into Profit
 ---

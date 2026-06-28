@@ -3,7 +3,7 @@ title: India's Daughter is our collective opportunity
 description: Women’s Rights & What is Right
 pubDate: 2019-04-10T17:34:00
 updatedDate: 2026-06-26T17:34:00
-heroImage: /blog/images/pasted-image-1782513268691.png
+heroImage: /images/pasted-image-1782513268691.png
 tags:
   - Leadership
   - Social Engineering

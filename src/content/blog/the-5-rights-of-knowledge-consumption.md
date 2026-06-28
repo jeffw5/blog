@@ -3,7 +3,7 @@ title: The 5 Rights of Knowledge Consumption
 description: Measure Knowledge Consumption before Managing it
 pubDate: 2013-11-04T15:06:00
 updatedDate: 2026-06-27T15:06:00
-heroImage: /blog/images/pasted-image-1782590818363.png
+heroImage: /images/pasted-image-1782590818363.png
 tags:
   - Knowledge Engineering
   - Monitoring & Measurement

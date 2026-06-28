@@ -5,7 +5,7 @@ description: |-
   Let's not loose site of the role that technology plays
 pubDate: 2022-06-09T22:36:00
 updatedDate: 2026-06-25T22:44:00
-heroImage: /blog/images/pasted-image-1782444538926.png
+heroImage: /images/pasted-image-1782444538926.png
 tags:
   - AI
 ---

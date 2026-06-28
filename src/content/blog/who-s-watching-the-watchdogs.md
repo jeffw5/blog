@@ -3,7 +3,7 @@ title: Who's Watching the Watchdogs ?
 description: Dynamic Profiling and Surveillance
 pubDate: 2022-04-23T23:07:00
 updatedDate: 2026-06-26T23:07:00
-heroImage: /blog/images/pasted-image-1782533246878.png
+heroImage: /images/pasted-image-1782533246878.png
 tags:
   - TRUST
 ---

@@ -3,7 +3,7 @@ title: Human Potential Realization
 description: Maximizing Human Potential with AI
 pubDate: 2018-08-20T07:51:00
 updatedDate: 2026-06-26T07:51:00
-heroImage: /blog/images/pasted-image-1782478262527.png
+heroImage: /images/pasted-image-1782478262527.png
 tags:
   - Social Engineering
   - Leadership

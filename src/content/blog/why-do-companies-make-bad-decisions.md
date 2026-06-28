@@ -3,7 +3,7 @@ title: Why Do Companies Make Bad Decisions ?
 description: Making Better Decisions
 pubDate: 2020-09-17T14:41:00
 updatedDate: 2026-06-27T14:41:00
-heroImage: /blog/images/pasted-image-1782589287315.png
+heroImage: /images/pasted-image-1782589287315.png
 tags:
   - Decision Making
   - Leadership

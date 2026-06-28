@@ -3,7 +3,7 @@ title: Reduce Cycle Time
 description: Pain vs Profit
 pubDate: 2009-02-18T12:58:00
 updatedDate: ''
-heroImage: /blog/images/pasted-image-1782570993005.png
+heroImage: /images/pasted-image-1782570993005.png
 tags:
   - BizDNA
   - Turn Pain into Profit

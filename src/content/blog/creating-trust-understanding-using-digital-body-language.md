@@ -3,7 +3,7 @@ title: Creating TRUST & Understanding Using Digital Body Language
 description: Trust & Understanding in the Digital Age
 pubDate: 2020-11-20T20:28:00
 updatedDate: 2026-06-24T20:28:00
-heroImage: /blog/images/pasted-image-1782350932242.png
+heroImage: /images/pasted-image-1782350932242.png
 tags:
   - Customer Focus
   - TRUST

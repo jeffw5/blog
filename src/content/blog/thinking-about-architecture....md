@@ -3,7 +3,7 @@ title: Thinking About Architecture...
 description: Design Thinking Applied to Technology
 pubDate: 2020-12-01T12:00:00
 updatedDate: 2026-06-26T20:21:00
-heroImage: /blog/images/pasted-image-1782523190410.png
+heroImage: /images/pasted-image-1782523190410.png
 tags:
   - Architecture
 ---

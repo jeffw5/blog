@@ -3,7 +3,7 @@ title: Measuring the RIGHT Value
 description: Measuring the Value Gap
 pubDate: 2011-09-21T08:04:00
 updatedDate: 2026-06-27T08:04:00
-heroImage: /blog/images/pasted-image-1782565550112.png
+heroImage: /images/pasted-image-1782565550112.png
 tags:
   - Value
   - Monitoring & Measurement
@@ -28,7 +28,7 @@ Clarify the Value Gap (Value Delivered vs Value Desired)
 - Apply value measurement using an ecosystem approach
 - Measure the Value Gap (see below) between Desired & Delivered Outcomes 
 
-![Measuring the Value Gap](/blog/images/pasted-image-1782565617798.png "Measuring the Value Gap")
+![Measuring the Value Gap](/images/pasted-image-1782565617798.png "Measuring the Value Gap")
 
 Translate value into design specifications
 

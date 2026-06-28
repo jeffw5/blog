@@ -3,7 +3,7 @@ title: Diversity, Acceptance, & Inclusivity
 description: Let's start with Acceptance
 pubDate: 2021-01-08T19:25:00
 updatedDate: 2026-06-24T19:25:00
-heroImage: /blog/images/pasted-image-1782347114929.png
+heroImage: /images/pasted-image-1782347114929.png
 tags:
   - Diversity
 ---

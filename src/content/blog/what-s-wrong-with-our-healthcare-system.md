@@ -3,7 +3,7 @@ title: What's Wrong with our Healthcare System ?
 description: How do we fix healthcare?
 pubDate: 2012-11-16T07:26:00
 updatedDate: 2026-06-27T07:27:00
-heroImage: /blog/images/pasted-image-1782563228420.png
+heroImage: /images/pasted-image-1782563228420.png
 tags:
   - Healthcare
 ---

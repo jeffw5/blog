@@ -3,7 +3,7 @@ title: Future of Work and AI
 description: The Age of Human Displacement
 pubDate: 2023-03-22T14:41:00
 updatedDate: 2026-06-26T14:41:00
-heroImage: /blog/images/pasted-image-1782502891860.png
+heroImage: /images/pasted-image-1782502891860.png
 tags:
   - AI
   - Social Engineering

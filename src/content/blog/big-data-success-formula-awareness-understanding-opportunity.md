@@ -3,7 +3,7 @@ title: 'Big Data Success Formula: Awareness + Understanding => Opportunity'
 description: Identify supported by Contextualization (enrichment) enables understanding
 pubDate: 2023-04-21T22:57:00
 updatedDate: 2026-06-26T22:57:00
-heroImage: /blog/images/pasted-image-1782532664132.png
+heroImage: /images/pasted-image-1782532664132.png
 tags:
   - Knowledge Engineering
 ---

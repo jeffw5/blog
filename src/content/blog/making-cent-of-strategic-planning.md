@@ -3,7 +3,7 @@ title: Making Cent$ of Strategic Planning
 description: Driving Value through Strategic Planning
 pubDate: 2022-06-03T23:28:00
 updatedDate: 2026-06-24T23:29:00
-heroImage: /blog/images/pasted-image-1782362065665.png
+heroImage: /images/pasted-image-1782362065665.png
 tags:
   - Strategy
 ---

@@ -3,7 +3,7 @@ title: Implementing Lightweight Governance
 description: Establishing an ARB using a lightweight approach
 pubDate: 2021-07-11T23:03:00
 updatedDate: 2026-06-26T23:03:00
-heroImage: /blog/images/pasted-image-1782533014178.png
+heroImage: /images/pasted-image-1782533014178.png
 tags:
   - Governance
   - Architecture

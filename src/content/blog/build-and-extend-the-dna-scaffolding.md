@@ -3,7 +3,7 @@ title: Build and Extend the DNA Scaffolding
 description: Building a Digital Twin for your business
 pubDate: 2024-08-19T11:52:00
 updatedDate: 2026-06-27T11:52:00
-heroImage: /blog/images/pasted-image-1782579137615.png
+heroImage: /images/pasted-image-1782579137615.png
 tags:
   - BizDNA
   - Business Model
@@ -14,7 +14,7 @@ The concept of a digital twin has been around for many years. The goal of a digi
 
 Most organizations are pursuing digital transformation initiatives to build more responsive "experiences" with their customers. These are useful exercises to learn how to use RPA, AI, & ML tools before embarking on developing a digital twin. ​
 
-![Knowledge Lattice for Guiding AI](/blog/images/pasted-image-1782579270786.png "Knowledge Lattice for Guiding AI")
+![Knowledge Lattice for Guiding AI](/images/pasted-image-1782579270786.png "Knowledge Lattice for Guiding AI")
 
 Designing and building a digital twin is an order of magnitude more complex than current digital transformation initiatives. You can't just build a set of algorithms to model all of the options and possibilities to predict impact of change across an organization.​
 

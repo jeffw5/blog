@@ -5,7 +5,7 @@ description: |-
   MEASURE, ASSESS, ROADMAP
 pubDate: 2016-03-17T09:22:00
 updatedDate: 2026-06-27T09:22:00
-heroImage: /blog/images/pasted-image-1782570182648.png
+heroImage: /images/pasted-image-1782570182648.png
 tags:
   - Agile
   - Monitoring & Measurement

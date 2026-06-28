@@ -3,7 +3,7 @@ title: 'Future Think: Level 3 Relationships'
 description: Building Digital Relationships
 pubDate: 2021-03-08T20:56:00
 updatedDate: 2026-06-24T20:56:00
-heroImage: /blog/images/pasted-image-1782352594380.png
+heroImage: /images/pasted-image-1782352594380.png
 tags:
   - Customer Focus
 ---

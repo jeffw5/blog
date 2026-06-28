@@ -3,7 +3,7 @@ title: Why don't organizations make better use of Architecture ?
 description: De-Risking your technology investments
 pubDate: 2013-04-10T07:44:00
 updatedDate: 2026-06-27T07:44:00
-heroImage: /blog/images/pasted-image-1782564315508.png
+heroImage: /images/pasted-image-1782564315508.png
 tags:
   - Architecture
   - Monitoring & Measurement

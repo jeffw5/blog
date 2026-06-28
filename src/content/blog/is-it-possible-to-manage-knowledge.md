@@ -3,7 +3,7 @@ title: Is it possible to "Manage" Knowledge ?
 description: Manage data and curate knowledge
 pubDate: 2024-11-09T21:57:00
 updatedDate: 2026-06-27T21:57:00
-heroImage: /blog/images/pasted-image-1782615487576.png
+heroImage: /images/pasted-image-1782615487576.png
 tags:
   - Knowledge Engineering
   - Intelligence

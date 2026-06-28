@@ -3,7 +3,7 @@ title: What's the difference between Bus Unit & Bus Function ?
 description: Architecting your business
 pubDate: 2020-07-07T14:22:00
 updatedDate: 2026-06-26T23:05:00
-heroImage: /blog/images/pasted-image-1782533150426.png
+heroImage: /images/pasted-image-1782533150426.png
 tags:
   - Business Architecture
   - Business Model

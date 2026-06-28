@@ -3,7 +3,7 @@ title: Simplify Decisions
 description: Pain vs Profit
 pubDate: 2009-05-10T10:54:00
 updatedDate: 2026-06-27T10:54:00
-heroImage: /blog/images/pasted-image-1782575675714.png
+heroImage: /images/pasted-image-1782575675714.png
 tags:
   - Turn Pain into Profit
 ---

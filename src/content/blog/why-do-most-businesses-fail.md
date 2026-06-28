@@ -3,7 +3,7 @@ title: Why do most businesses fail ?
 description: 3 Factors contributing to failure
 pubDate: 2010-05-16T14:28:00
 updatedDate: 2026-06-27T14:28:00
-heroImage: /blog/images/pasted-image-1782588552635.png
+heroImage: /images/pasted-image-1782588552635.png
 tags:
   - Leadership
   - Risk & Exposure

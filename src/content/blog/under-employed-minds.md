@@ -3,7 +3,7 @@ title: Under-employed minds
 description: Measuring and Maximizing Human Potential
 pubDate: 2010-02-15T14:39:00
 updatedDate: 2026-06-27T14:39:00
-heroImage: /blog/images/pasted-image-1782503042272.png
+heroImage: /images/pasted-image-1782503042272.png
 tags:
   - Human Resources
 ---

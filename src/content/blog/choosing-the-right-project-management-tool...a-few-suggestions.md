@@ -3,7 +3,7 @@ title: Choosing the right Project Management tool...a few suggestions
 description: Project & Program Management Tools
 pubDate: 2021-10-09T08:40:00
 updatedDate: 2026-06-26T08:40:00
-heroImage: /blog/images/pasted-image-1782481246047.png
+heroImage: /images/pasted-image-1782481246047.png
 tags:
   - Project Management
 ---

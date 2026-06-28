@@ -3,7 +3,7 @@ title: Rethinking Social Research
 description: Can Machines Have a Soul?
 pubDate: 2021-04-21T08:38:00
 updatedDate: 2026-06-26T08:38:00
-heroImage: /blog/images/pasted-image-1782481152179.png
+heroImage: /images/pasted-image-1782481152179.png
 tags:
   - Social Engineering
   - Digital Transformation

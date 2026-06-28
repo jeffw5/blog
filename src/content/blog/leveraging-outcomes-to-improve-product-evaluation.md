@@ -3,7 +3,7 @@ title: Leveraging Outcomes to Improve Product Evaluation
 description: Use outcomes to measure product value
 pubDate: 2016-08-31T15:10:00
 updatedDate: 2026-06-27T15:10:00
-heroImage: /blog/images/pasted-image-1782591066953.png
+heroImage: /images/pasted-image-1782591066953.png
 tags:
   - Monitoring & Measurement
   - Innovation

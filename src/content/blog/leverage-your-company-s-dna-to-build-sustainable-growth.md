@@ -3,7 +3,7 @@ title: Leverage Your Company's DNA to Build Sustainable Growth
 description: What is Corporate DNA?
 pubDate: 2017-10-17T07:50:00
 updatedDate: 2026-06-27T07:50:00
-heroImage: /blog/images/pasted-image-1782564702018.png
+heroImage: /images/pasted-image-1782564702018.png
 tags:
   - Business Model
   - Architecture

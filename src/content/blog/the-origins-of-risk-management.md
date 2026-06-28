@@ -3,7 +3,7 @@ title: The Origins of Risk Management ?
 description: History behind Risk Management
 pubDate: 2022-09-02T23:48:00
 updatedDate: 2026-06-26T23:48:00
-heroImage: /blog/images/pasted-image-1782535711342.png
+heroImage: /images/pasted-image-1782535711342.png
 tags:
   - Risk & Exposure
 ---

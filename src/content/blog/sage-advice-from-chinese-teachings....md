@@ -3,7 +3,7 @@ title: Sage advice from Chinese Teachings...
 description: Wisdom from ancient writings
 pubDate: 2014-10-19T14:51:00
 updatedDate: 2026-06-27T14:52:00
-heroImage: /blog/images/pasted-image-1782589937997.png
+heroImage: /images/pasted-image-1782589937997.png
 tags:
   - Learning
   - Intelligence

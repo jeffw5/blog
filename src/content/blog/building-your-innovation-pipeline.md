@@ -5,7 +5,7 @@ description: |-
   FUND, PRIORITIZE, DEVELOP, DELIVER
 pubDate: 2016-06-03T11:32:00
 updatedDate: 2026-06-27T11:32:00
-heroImage: /blog/images/pasted-image-1782577908766.png
+heroImage: /images/pasted-image-1782577908766.png
 tags:
   - Innovation
 ---

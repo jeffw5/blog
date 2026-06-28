@@ -3,7 +3,7 @@ title: LEAN IN To Continually Improve Customer Value
 description: Improving Customer Value
 pubDate: 2021-01-24T14:40:00
 updatedDate: 2026-06-24T19:14:00
-heroImage: /blog/images/pasted-image-1782330075027.png
+heroImage: /images/pasted-image-1782330075027.png
 tags:
   - Customer Focus
 ---

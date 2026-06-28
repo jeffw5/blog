@@ -3,7 +3,7 @@ title: Advancing Programmatic Morality
 description: Engineering Ethics & Morality into the Digital Ecosystem
 pubDate: 2024-07-08T07:28:00
 updatedDate: 2026-06-26T07:29:00
-heroImage: /blog/images/pasted-image-1782476954385.png
+heroImage: /images/pasted-image-1782476954385.png
 tags:
   - Social Engineering
   - Architecture

@@ -3,7 +3,7 @@ title: Systems Thinking and Architecting for the Enterprise
 description: Systems Engineering starts with Systems Thinking
 pubDate: 2014-04-27T07:48:00
 updatedDate: 2026-06-27T07:48:00
-heroImage: /blog/images/pasted-image-1782564518294.png
+heroImage: /images/pasted-image-1782564518294.png
 tags:
   - Design Thinking
   - Systems Engineering

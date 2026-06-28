@@ -3,7 +3,7 @@ title: Improving Scale
 description: Pain vs Profit
 pubDate: 2009-03-05T10:49:00
 updatedDate: 2026-06-27T10:49:00
-heroImage: /blog/images/pasted-image-1782575379814.png
+heroImage: /images/pasted-image-1782575379814.png
 tags:
   - Turn Pain into Profit
 ---

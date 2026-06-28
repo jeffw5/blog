@@ -3,7 +3,7 @@ title: Impact of AI & ML on Business & Work
 description: Accelerating Work 2.0
 pubDate: 2024-05-21T14:48:00
 updatedDate: 2026-06-26T14:48:00
-heroImage: /blog/images/pasted-image-1782503367764.png
+heroImage: /images/pasted-image-1782503367764.png
 tags:
   - AI
   - Social Engineering

@@ -3,7 +3,7 @@ title: Improve Interoperability
 description: Pain vs Profit
 pubDate: 2009-03-05T09:58:00
 updatedDate: 2026-06-27T09:58:00
-heroImage: /blog/images/pasted-image-1782572325100.png
+heroImage: /images/pasted-image-1782572325100.png
 tags:
   - Turn Pain into Profit
 ---

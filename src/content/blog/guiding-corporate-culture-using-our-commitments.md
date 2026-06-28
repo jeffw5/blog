@@ -3,7 +3,7 @@ title: Guiding Corporate Culture using our Commitments
 description: Commit to your culture to ensure your culture enables your strategy
 pubDate: 2021-04-03T21:55:00
 updatedDate: 2026-06-27T21:55:00
-heroImage: /blog/images/pasted-image-1782615272543.png
+heroImage: /images/pasted-image-1782615272543.png
 tags:
   - Culture
   - Leadership

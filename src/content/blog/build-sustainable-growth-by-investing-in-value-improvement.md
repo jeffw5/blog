@@ -3,7 +3,7 @@ title: Build Sustainable Growth by Investing in Value Improvement
 description: Architecting for Sustainable Growth
 pubDate: 2016-08-06T07:55:00
 updatedDate: 2026-06-27T07:55:00
-heroImage: /blog/images/pasted-image-1782565089004.png
+heroImage: /images/pasted-image-1782565089004.png
 tags:
   - Business Architecture
 ---

@@ -3,7 +3,7 @@ title: Architecting Your Business (Part 6)
 description: How To Architect Your Business
 pubDate: 2021-11-15T12:42:00
 updatedDate: 2026-06-25T12:39:00
-heroImage: /blog/images/pasted-image-1782409189592.png
+heroImage: /images/pasted-image-1782409189592.png
 tags:
   - Architecture
   - Business Model

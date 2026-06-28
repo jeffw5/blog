@@ -3,7 +3,7 @@ title: Why is Context Relevant in Big Data ?
 description: Context is King
 pubDate: 2023-08-05T17:44:00
 updatedDate: 2026-06-26T17:44:00
-heroImage: /blog/images/pasted-image-1782513911821.png
+heroImage: /images/pasted-image-1782513911821.png
 tags:
   - AI
   - Knowledge Engineering

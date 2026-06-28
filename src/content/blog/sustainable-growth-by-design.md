@@ -3,7 +3,7 @@ title: Sustainable Growth by Design
 description: Design Thinking + Systems Engineering = Sustainable Growth
 pubDate: 2015-05-27T07:59:00
 updatedDate: 2026-06-27T07:59:00
-heroImage: /blog/images/pasted-image-1782565185746.png
+heroImage: /images/pasted-image-1782565185746.png
 tags:
   - Business Architecture
 ---

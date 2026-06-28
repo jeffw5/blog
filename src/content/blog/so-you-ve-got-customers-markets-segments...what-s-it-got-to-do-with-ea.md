@@ -3,7 +3,7 @@ title: So, you've got customers, markets, segments...what's it got to do with EA
 description: Architecting Customer Focus
 pubDate: 2022-05-30T23:44:00
 updatedDate: 2026-06-26T23:44:00
-heroImage: /blog/images/pasted-image-1782535505329.png
+heroImage: /images/pasted-image-1782535505329.png
 tags:
   - Architecture
   - Business Architecture

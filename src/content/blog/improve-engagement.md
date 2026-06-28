@@ -3,7 +3,7 @@ title: Improve Engagement
 description: Pain vs Profit
 pubDate: 2009-04-13T10:52:00
 updatedDate: 2026-06-27T10:52:00
-heroImage: /blog/images/pasted-image-1782575609632.png
+heroImage: /images/pasted-image-1782575609632.png
 tags:
   - Turn Pain into Profit
 ---

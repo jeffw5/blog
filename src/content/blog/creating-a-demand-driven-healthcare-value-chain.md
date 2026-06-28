@@ -3,7 +3,7 @@ title: Creating a Demand Driven Healthcare Value Chain
 description: Formalizing Demand Management to ensure we deliver the RIGHT value for patients
 pubDate: 2009-09-07T22:16:00
 updatedDate: 2026-06-27T22:16:00
-heroImage: /blog/images/pasted-image-1782616586358.png
+heroImage: /images/pasted-image-1782616586358.png
 tags:
   - Healthcare
   - Requirements Engineering

@@ -5,7 +5,7 @@ description: |-
   Taking the Long View Now
 pubDate: 2017-04-09T11:50:00
 updatedDate: 2026-06-27T11:50:00
-heroImage: /blog/images/pasted-image-1782579033630.png
+heroImage: /images/pasted-image-1782579033630.png
 tags:
   - Agile
   - Digital Transformation

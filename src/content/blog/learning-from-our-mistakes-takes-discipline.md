@@ -3,7 +3,7 @@ title: Learning from our mistakes takes discipline
 description: Learning from Mistakes
 pubDate: 2019-04-11T23:14:00
 updatedDate: 2026-06-25T23:15:00
-heroImage: /blog/images/pasted-image-1782447325158.png
+heroImage: /images/pasted-image-1782447325158.png
 tags:
   - Learning
 ---

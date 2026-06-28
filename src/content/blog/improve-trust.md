@@ -3,7 +3,7 @@ title: Improve Trust
 description: Trust is the underlayment for society and progress.
 pubDate: 2009-03-17T09:40:00
 updatedDate: 2026-06-27T09:41:00
-heroImage: /blog/images/pasted-image-1782571263254.png
+heroImage: /images/pasted-image-1782571263254.png
 tags:
   - Turn Pain into Profit
 ---

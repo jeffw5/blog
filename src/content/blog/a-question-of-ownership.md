@@ -3,7 +3,7 @@ title: A Question of Ownership
 description: Accountability vs Responsibility vs Ownership
 pubDate: 2024-01-10T14:36:00
 updatedDate: 2026-06-27T14:36:00
-heroImage: /blog/images/pasted-image-1782588997097.png
+heroImage: /images/pasted-image-1782588997097.png
 tags:
   - Leadership
   - Governance

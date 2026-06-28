@@ -3,7 +3,7 @@ title: Improve Prioritization
 description: Pain vs Profit
 pubDate: 2009-04-12T11:02:00
 updatedDate: 2026-06-27T11:02:00
-heroImage: /blog/images/pasted-image-1782576168922.png
+heroImage: /images/pasted-image-1782576168922.png
 tags:
   - Turn Pain into Profit
 ---

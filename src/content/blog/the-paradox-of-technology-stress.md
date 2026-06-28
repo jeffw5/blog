@@ -3,7 +3,7 @@ title: The Paradox of Technology & Stress
 description: AI, Society, and Technology Impact
 pubDate: 2019-04-12T23:19:00
 updatedDate: 2026-06-25T23:19:00
-heroImage: /blog/images/pasted-image-1782447603711.png
+heroImage: /images/pasted-image-1782447603711.png
 tags:
   - Social Engineering
   - AI

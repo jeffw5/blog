@@ -3,7 +3,7 @@ title: Improve Adaptability
 description: Pain vs Profit
 pubDate: 2009-03-19T11:10:00
 updatedDate: 2026-06-27T11:10:00
-heroImage: /blog/images/pasted-image-1782576625645.png
+heroImage: /images/pasted-image-1782576625645.png
 tags:
   - Turn Pain into Profit
 ---

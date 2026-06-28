@@ -3,7 +3,7 @@ title: An 'Arab Spring' for Education in the US
 description: Disrupting Education
 pubDate: 2022-01-08T15:03:00
 updatedDate: 2026-06-26T15:03:00
-heroImage: /blog/images/pasted-image-1782504230814.png
+heroImage: /images/pasted-image-1782504230814.png
 tags:
   - Education
 ---

@@ -3,7 +3,7 @@ title: EA Standards & Principles
 description: 'Enterprise Architecture: Principles & Standards'
 pubDate: 2017-04-02T21:58:00
 updatedDate: 2026-06-27T21:59:00
-heroImage: /blog/images/pasted-image-1782615623495.png
+heroImage: /images/pasted-image-1782615623495.png
 tags:
   - Architecture
 ---

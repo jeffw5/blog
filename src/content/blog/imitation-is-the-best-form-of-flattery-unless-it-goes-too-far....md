@@ -3,7 +3,7 @@ title: Imitation is the best form of flattery, unless it goes too far...
 description: Innovation is built on the shoulders of new and existing ideas
 pubDate: 2019-03-06T07:41:00
 updatedDate: 2026-06-26T07:41:00
-heroImage: /blog/images/pasted-image-1782477690146.png
+heroImage: /images/pasted-image-1782477690146.png
 tags:
   - Innovation
   - Social Engineering

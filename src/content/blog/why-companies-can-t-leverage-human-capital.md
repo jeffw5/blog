@@ -3,7 +3,7 @@ title: Why Companies Can't Leverage Human Capital ?
 description: Enable workers don’t manage them
 pubDate: 2022-08-02T14:43:00
 updatedDate: 2026-06-27T14:44:00
-heroImage: /blog/images/pasted-image-1782589444477.png
+heroImage: /images/pasted-image-1782589444477.png
 tags:
   - Leadership
   - Human Resources

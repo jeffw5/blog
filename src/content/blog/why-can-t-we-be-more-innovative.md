@@ -3,7 +3,7 @@ title: Why Can't WE be more Innovative ?
 description: How do we become more innovative?
 pubDate: 2012-05-12T07:43:00
 updatedDate: 2026-06-27T07:43:00
-heroImage: /blog/images/pasted-image-1782564219664.png
+heroImage: /images/pasted-image-1782564219664.png
 tags:
   - Innovation
 ---

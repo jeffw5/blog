@@ -3,7 +3,7 @@ title: Applying science and forensics to build sustainable knowledge
 description: Sustainable Knowledge
 pubDate: 2023-04-18T23:17:00
 updatedDate: 2026-06-25T23:17:00
-heroImage: /blog/images/pasted-image-1782447444457.png
+heroImage: /images/pasted-image-1782447444457.png
 tags:
   - Knowledge Engineering
 ---

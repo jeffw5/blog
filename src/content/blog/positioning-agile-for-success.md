@@ -3,7 +3,7 @@ title: Positioning Agile for Success
 description: Applying Agile to Deliver Value
 pubDate: 2022-06-27T21:58:00
 updatedDate: 2026-06-24T21:58:00
-heroImage: /blog/images/pasted-image-1782356313714.png
+heroImage: /images/pasted-image-1782356313714.png
 tags:
   - Agile
 ---

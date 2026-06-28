@@ -3,7 +3,7 @@ title: Disrupting Mobile Payments
 description: Rethinking Mobile Payment
 pubDate: 2023-04-25T14:54:00
 updatedDate: 2026-06-26T14:54:00
-heroImage: /blog/images/pasted-image-1782503688839.png
+heroImage: /images/pasted-image-1782503688839.png
 tags:
   - Digital Transformation
   - Finance

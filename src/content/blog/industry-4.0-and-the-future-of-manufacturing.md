@@ -3,7 +3,7 @@ title: Industry 4.0 and The Future of Manufacturing
 description: The Future of Manufacturing in the age of AI & Robotics
 pubDate: 2021-05-12T22:51:00
 updatedDate: 2026-06-25T22:52:00
-heroImage: /blog/images/pasted-image-1782445984086.png
+heroImage: /images/pasted-image-1782445984086.png
 tags:
   - Supply Chain
 ---

@@ -3,7 +3,7 @@ title: 'New Math: EA + ERP = Sustainable Value'
 description: Sustainable Planet, People, and Profit in that order
 pubDate: 2020-10-12T06:59:00
 updatedDate: 2026-06-27T06:59:00
-heroImage: /blog/images/pasted-image-1782561625945.png
+heroImage: /images/pasted-image-1782561625945.png
 tags:
   - Value
   - Architecture

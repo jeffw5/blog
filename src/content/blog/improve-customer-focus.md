@@ -3,7 +3,7 @@ title: Improve Customer Focus
 description: Pain vs Profit
 pubDate: 2009-04-24T11:13:00
 updatedDate: 2026-06-27T11:14:00
-heroImage: /blog/images/pasted-image-1782576853754.png
+heroImage: /images/pasted-image-1782576853754.png
 tags:
   - Turn Pain into Profit
 ---

@@ -3,7 +3,7 @@ title: Education Disconnected
 description: Disrupting Education
 pubDate: 2023-04-10T14:51:00
 updatedDate: 2026-06-26T14:51:00
-heroImage: /blog/images/pasted-image-1782503542712.png
+heroImage: /images/pasted-image-1782503542712.png
 tags:
   - Education
   - AI

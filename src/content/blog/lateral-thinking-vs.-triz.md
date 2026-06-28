@@ -3,7 +3,7 @@ title: Lateral Thinking vs. TRIZ ?
 description: Compare & Contrast
 pubDate: 2014-03-03T15:09:00
 updatedDate: 2026-06-27T15:09:00
-heroImage: /blog/images/pasted-image-1782590974290.png
+heroImage: /images/pasted-image-1782590974290.png
 tags:
   - Lateral Thinking
   - Innovation

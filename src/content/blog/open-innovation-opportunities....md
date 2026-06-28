@@ -3,7 +3,7 @@ title: Open Innovation Opportunities...
 description: Driving Innovation
 pubDate: 2020-02-03T14:37:00
 updatedDate: 2026-06-27T14:37:00
-heroImage: /blog/images/pasted-image-1782589077879.png
+heroImage: /images/pasted-image-1782589077879.png
 tags:
   - Innovation
 ---

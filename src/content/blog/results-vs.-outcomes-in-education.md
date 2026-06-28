@@ -3,7 +3,7 @@ title: Results vs. Outcomes in Education
 description: How do we measure the value of education?
 pubDate: 2021-08-14T15:00:00
 updatedDate: 2026-06-27T15:00:00
-heroImage: /blog/images/pasted-image-1782590429221.png
+heroImage: /images/pasted-image-1782590429221.png
 tags:
   - Education
   - Customer Focus

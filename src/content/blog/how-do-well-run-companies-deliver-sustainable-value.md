@@ -3,7 +3,7 @@ title: How do well run companies deliver sustainable value ?
 description: Building a sustainable culture
 pubDate: 2016-04-14T15:50:00
 updatedDate: 2026-06-27T15:50:00
-heroImage: /blog/images/pasted-image-1782593471076.png
+heroImage: /images/pasted-image-1782593471076.png
 tags:
   - Design Thinking
   - Strategy

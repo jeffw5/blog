@@ -5,7 +5,7 @@ description: |-
   DESIRED VS DELIVERED OUTCOMES
 pubDate: 2015-05-05T09:25:00
 updatedDate: 2026-06-27T09:25:00
-heroImage: /blog/images/pasted-image-1782570343808.png
+heroImage: /images/pasted-image-1782570343808.png
 tags:
   - BizDNA
   - Customer Focus

@@ -3,7 +3,7 @@ title: Rise of the Machines
 description: What role will humans have as machines displace them in work?
 pubDate: 2019-04-10T17:37:00
 updatedDate: 2026-06-26T17:37:00
-heroImage: /blog/images/pasted-image-1782513425476.png
+heroImage: /images/pasted-image-1782513425476.png
 tags:
   - Robotics
   - Social Engineering

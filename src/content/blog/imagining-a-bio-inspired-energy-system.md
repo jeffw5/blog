@@ -3,7 +3,7 @@ title: Imagining a Bio-Inspired Energy System
 description: The future of energy generation and transmission
 pubDate: 2019-12-21T14:34:00
 updatedDate: 2026-06-27T14:34:00
-heroImage: /blog/images/pasted-image-1782588815994.png
+heroImage: /images/pasted-image-1782588815994.png
 tags:
   - Design Thinking
   - Strategy

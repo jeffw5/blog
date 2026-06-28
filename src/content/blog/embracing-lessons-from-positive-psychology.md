@@ -3,7 +3,7 @@ title: Embracing Lessons from Positive Psychology
 description: The Power of Positive Thinking
 pubDate: 2021-01-02T20:15:00
 updatedDate: 2026-06-24T20:15:00
-heroImage: /blog/images/pasted-image-1782350242867.png
+heroImage: /images/pasted-image-1782350242867.png
 tags:
   - Psychology
 ---

@@ -3,7 +3,7 @@ title: What is the scope of Enterprise Architecture ?
 description: What do we mean by “enterprise”?
 pubDate: 2012-09-07T07:39:00
 updatedDate: 2026-06-27T07:39:00
-heroImage: /blog/images/pasted-image-1782564001056.png
+heroImage: /images/pasted-image-1782564001056.png
 tags:
   - Architecture
 ---

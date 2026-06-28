@@ -3,7 +3,7 @@ title: Becoming MORE successful with innovation (Part 1 of 2)
 description: Driving Innovation
 pubDate: 2022-06-20T22:09:00
 updatedDate: 2026-06-25T22:47:00
-heroImage: /blog/images/pasted-image-1782409877284.png
+heroImage: /images/pasted-image-1782409877284.png
 tags:
   - Innovation
 ---

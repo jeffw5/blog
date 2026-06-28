@@ -3,7 +3,7 @@ title: When the price is NOT right
 description: Price Optimization
 pubDate: 2021-06-04T22:24:00
 updatedDate: ''
-heroImage: /blog/images/pasted-image-1782444289951.png
+heroImage: /images/pasted-image-1782444289951.png
 tags:
   - Pricing
 ---

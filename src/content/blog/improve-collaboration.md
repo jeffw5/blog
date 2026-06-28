@@ -3,7 +3,7 @@ title: Improve Collaboration
 description: Pain vs Profit
 pubDate: 2009-03-20T10:56:00
 updatedDate: 2026-06-27T10:56:00
-heroImage: /blog/images/pasted-image-1782575803109.png
+heroImage: /images/pasted-image-1782575803109.png
 tags:
   - Turn Pain into Profit
 ---

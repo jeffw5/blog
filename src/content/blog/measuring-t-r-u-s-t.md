@@ -3,7 +3,7 @@ title: Measuring T R U S T
 description: What is Trust and how do we measure it?
 pubDate: 2020-10-14T20:51:00
 updatedDate: 2026-06-24T20:51:00
-heroImage: /blog/images/pasted-image-1782352374336.png
+heroImage: /images/pasted-image-1782352374336.png
 tags:
   - TRUST
 ---

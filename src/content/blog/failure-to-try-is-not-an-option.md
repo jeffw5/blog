@@ -3,7 +3,7 @@ title: Failure to TRY is not an option
 description: Failure Used to NOT Be an Option
 pubDate: 2021-08-13T21:02:00
 updatedDate: 2026-06-24T21:02:00
-heroImage: /blog/images/pasted-image-1782352967076.png
+heroImage: /images/pasted-image-1782352967076.png
 tags:
   - Leadership
 ---

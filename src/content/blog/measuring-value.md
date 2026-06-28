@@ -3,7 +3,7 @@ title: Measuring Value
 description: Design, Develop and Deliver the RIGHT Value
 pubDate: 2011-10-12T08:02:00
 updatedDate: 2026-06-27T08:02:00
-heroImage: /blog/images/pasted-image-1782565338782.png
+heroImage: /images/pasted-image-1782565338782.png
 tags:
   - Value
   - Monitoring & Measurement

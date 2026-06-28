@@ -3,7 +3,7 @@ title: Another of Life's Great Mysteries
 description: What is architecture?
 pubDate: 2019-04-17T14:42:00
 updatedDate: 2026-06-27T14:42:00
-heroImage: /blog/images/pasted-image-1782589368305.png
+heroImage: /images/pasted-image-1782589368305.png
 tags:
   - Architecture
 ---

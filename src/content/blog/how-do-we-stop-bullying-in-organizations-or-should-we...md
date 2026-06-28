@@ -3,7 +3,7 @@ title: How do we stop bullying in organizations ? (or should we..?)
 description: Culture eats Strategy & Operational Efficiency
 pubDate: 2018-01-16T07:19:00
 updatedDate: 2026-06-27T07:19:00
-heroImage: /blog/images/pasted-image-1782562801895.png
+heroImage: /images/pasted-image-1782562801895.png
 tags:
   - Leadership
   - Human Resources

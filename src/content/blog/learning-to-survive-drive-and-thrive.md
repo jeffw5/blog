@@ -3,7 +3,7 @@ title: Learning to Survive, Drive, and Thrive
 description: Integrating Innovation into Change Management
 pubDate: 2018-11-16T11:23:00
 updatedDate: 2026-06-27T11:23:00
-heroImage: /blog/images/pasted-image-1782577423843.png
+heroImage: /images/pasted-image-1782577423843.png
 tags:
   - BizDNA
   - Project Management

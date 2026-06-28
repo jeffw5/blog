@@ -3,7 +3,7 @@ title: Introducing Fluid Prioritization using Multi-Factor Analysis (Part 2)
 description: Fluid Prioritization
 pubDate: 2022-04-19T23:01:00
 updatedDate: 2026-06-25T23:01:00
-heroImage: /blog/images/pasted-image-1782446518554.png
+heroImage: /images/pasted-image-1782446518554.png
 tags:
   - Prioritization
 ---

@@ -3,7 +3,7 @@ title: A Question of Leadership
 description: Digital Transformation and Leadership Impact
 pubDate: 2020-06-02T07:36:00
 updatedDate: 2026-06-26T07:36:00
-heroImage: /blog/images/pasted-image-1782477359613.png
+heroImage: /images/pasted-image-1782477359613.png
 tags:
   - Leadership
 ---

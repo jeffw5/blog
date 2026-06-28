@@ -3,7 +3,7 @@ title: Inoculate Your Business Against Risk
 description: Vaccinating your companyt from risk
 pubDate: 2021-05-07T21:50:00
 updatedDate: 2026-06-24T21:50:00
-heroImage: /blog/images/pasted-image-1782355852591.png
+heroImage: /images/pasted-image-1782355852591.png
 tags:
   - Risk & Exposure
 ---

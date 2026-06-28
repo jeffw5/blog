@@ -3,7 +3,7 @@ title: Design a Digital Platform to Scale Sustainable Growth
 description: Architecting Growth in your company
 pubDate: 2018-10-19T07:52:00
 updatedDate: 2026-06-27T07:52:00
-heroImage: /blog/images/pasted-image-1782564772660.png
+heroImage: /images/pasted-image-1782564772660.png
 tags:
   - Business Architecture
 ---

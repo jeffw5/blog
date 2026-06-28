@@ -3,7 +3,7 @@ title: How do I select the right tool or package for a Software Solution ?
 description: Technical Selection and Procurement
 pubDate: 2023-03-21T14:59:00
 updatedDate: 2026-06-26T14:59:00
-heroImage: /blog/images/pasted-image-1782504023537.png
+heroImage: /images/pasted-image-1782504023537.png
 tags:
   - Architecture
   - Requirements Engineering

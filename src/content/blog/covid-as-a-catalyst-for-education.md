@@ -3,7 +3,7 @@ title: COVID as a Catalyst for Education
 description: Innovative Leaders in Education
 pubDate: 2021-01-14T19:16:00
 updatedDate: 2026-06-24T19:17:00
-heroImage: /blog/images/pasted-image-1782346836097.png
+heroImage: /images/pasted-image-1782346836097.png
 tags:
   - Education
 ---

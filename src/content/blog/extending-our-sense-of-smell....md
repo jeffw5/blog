@@ -3,7 +3,7 @@ title: Extending our Sense of Smell...
 description: Digital Smell?
 pubDate: 2023-08-09T14:56:00
 updatedDate: ''
-heroImage: /blog/images/pasted-image-1782503834942.png
+heroImage: /images/pasted-image-1782503834942.png
 tags:
   - Social Engineering
   - Digital Transformation

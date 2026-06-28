@@ -3,7 +3,7 @@ title: A New Way of Conceptualizing a Medical Device
 description: Modular platforms for medical devices
 pubDate: 2021-11-14T19:06:00
 updatedDate: 2026-06-27T19:06:00
-heroImage: /blog/images/pasted-image-1782605163822.png
+heroImage: /images/pasted-image-1782605163822.png
 tags:
   - Design Thinking
   - Healthcare

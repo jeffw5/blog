@@ -3,7 +3,7 @@ title: 10 Things IT can do to "close the gap"
 description: Bridging the gap between Business & Technology
 pubDate: 2020-01-05T18:52:00
 updatedDate: 2026-06-27T18:52:00
-heroImage: /blog/images/pasted-image-1782604405529.png
+heroImage: /images/pasted-image-1782604405529.png
 tags:
   - Business Architecture
   - Technical Services

@@ -3,7 +3,7 @@ title: Enabling Innovation through Risk Management
 description: Leverage Risk to Guide Innovation
 pubDate: 2017-02-16T22:10:00
 updatedDate: 2026-06-27T22:10:00
-heroImage: /blog/images/pasted-image-1782616209762.png
+heroImage: /images/pasted-image-1782616209762.png
 tags:
   - Innovation
   - Risk & Exposure

@@ -3,7 +3,7 @@ title: Simplify Policy
 description: Pain vs Profit
 pubDate: 2009-05-17T11:06:00
 updatedDate: 2026-06-27T11:06:00
-heroImage: /blog/images/pasted-image-1782576413320.png
+heroImage: /images/pasted-image-1782576413320.png
 tags:
   - Turn Pain into Profit
 ---
